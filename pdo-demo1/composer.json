@@ -1,0 +1,21 @@
+{
+  "name": "toryazilim/pdo-demo1",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "Tuncay",
+      "email": "tuncayorak@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/engtuncay/phputils"
+    }
+  ],
+  "require": {
+    "engtuncay/phputils": "1.1"
+  }
+}
