@@ -1,0 +1,7 @@
+{
+  "name": "Debug built-in server",
+  "type": "php",
+  "request": "launch",
+  "runtimeArgs": ["-S", "localhost:8000", "-t", "./public"],
+  "trigger": "THIS"
+}
