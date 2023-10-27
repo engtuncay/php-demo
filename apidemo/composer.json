@@ -1,7 +1,0 @@
-{   "name": "engtuncay/apidemo",
-    "description": "apidemo",
-    "require": {
-        "teknomavi/tcmb": "^1.0",
-        "prodigyview/prodigyview": "^0.9.91"
-    }
-}
