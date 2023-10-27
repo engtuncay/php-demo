@@ -1,0 +1,40 @@
+<?php
+/**
+ * title için url oluşturur
+ *
+ * @param integer $id
+ * @param string $title
+ * @param string $type
+ * @return string
+ */
+function getDetailUrl($id,$title,$type)
+{
+    $title = mb_strtolower($title,'UTF-8');
+    $trArr = array('ç','Ç','ı','İ','ş','Ş','ğ','Ğ','ö','Ö','ü','Ü');
+    $enArr = array('c','c','i','i','s','s','g','g','o','o','u','u');
+
+    $title = str_replace($trArr,$enArr,$title);
+    if($type!='')
+        return sprintf('/%s/%s%s.html',$type,$id,getUrlText($title));
+    else 
+        return sprintf('/%s%s.html',$id,getUrlText($title));
+}
+/**
+ * title'ı link haline getirir
+ *
+ * @param string $text
+ * @return string
+ */
+function getUrlText($text)
+{
+    $text = mb_strtolower($text,'UTF-8');
+    $trArr = array('ç','Ç','ı','İ','ş','Ş','ğ','Ğ','ö','Ö','ü','Ü');
+    $enArr = array('c','c','i','i','s','s','g','g','o','o','u','u');
+
+    $text = str_replace($trArr,$enArr,$text);
+    $regex = '#[^-a-zA-Z0-9_ ]#';
+    $text = preg_replace($regex,'',$text);
+    $text = trim($text);
+    return preg_replace('#[-_ ]+#', '-', $text);
+}
+?>

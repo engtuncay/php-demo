@@ -1,0 +1,22 @@
+/*<a>
+  <isimler>
+    <data>Mehmet</data>
+  </isimler>
+  <isimler>
+    <data>Ahmet</data>
+  </isimler>
+</a>
+*/
+
+{
+    a:{
+        isimler:[
+            {
+                data:'Mehmet'
+            },
+            {
+                data:'Ahmet'
+            }
+        ]
+    }
+}

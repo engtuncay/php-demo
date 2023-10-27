@@ -1,0 +1,25 @@
+<link href="/css/user.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/location.js"></script>
+<form name="mainForm" action="">
+<table>
+ <tr>
+  <td class="text" valign="top">Yaşadığınız yer</td>
+  <td class="width350">
+  <select name="city_id" onchange="L.location.getLocation(2,this.value)" class="wid105px">
+   <option value="">--seçiniz--</option>
+  </select>
+  <select name="district_id" class="wid105px">
+   <option value="">--seçiniz--</option>
+  </select>
+  </td>
+ </tr>
+</table>
+</form>
+<script type="text/javascript">
+{if $locationJson!='' } 
+ L.location.formName='mainForm';
+ L.location.allLocationJson[0] = {$locationJson};
+ L.location.allLoation();
+ L.location.freeSelect();
+{/if}
+</script>

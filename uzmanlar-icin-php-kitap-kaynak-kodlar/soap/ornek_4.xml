@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" targetNamespace="http://musteri.banka.com"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="tipType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="cep" />
+			<xs:enumeration value="ev" />
+			<xs:enumeration value="is" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="telefonType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="tip" type="tipType" default="ev" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="musteri">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer" />
+				<xs:element name="ad" type="xs:string" />
+				<xs:element name="soyad" type="xs:string" />
+				<xs:element name="tel" type="telefonType" minOccurs="1"
+					maxOccurs="3" />
+				<xs:element name="adres" type="xs:string" />
+				<xs:element type="xs:string" name="aciklama" nillable="true">
+					<xs:annotation>
+						<xs:documentation>aciklama alanının doldurulması isteğe
+							bağlıdır
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="dogumtarih" type="xs:date" minOccurs="0" />
+				<xs:element name="bakiye" type="xs:decimal" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
