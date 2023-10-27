@@ -38,6 +38,14 @@ $app->get('/add', function (Request $request, Response $response) {
   return $response;
 });
 
+$app->post('/getData', function (Request $request, Response $response) {
+  $response->getBody()->write('Get Data');
+  $allPostPutVars = $request->getParsedBody();
+  $response->getBody()->write(json_encode($allPostPutVars));
+  return $response;
+});
+
+
 $app->run();
 
 

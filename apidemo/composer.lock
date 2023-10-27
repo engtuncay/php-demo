@@ -8,25 +8,23 @@
     "packages": [
         {
             "name": "prodigyview/prodigyview",
-            "version": "0.9.91",
+            "version": "0.9.99",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ProdigyView-Toolkit/prodigyview.git",
-                "reference": "4329d7931f7657f654e523c01218864787f023df"
+                "reference": "053cd02f168f3732d694de62ed763ff5b01be314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ProdigyView-Toolkit/prodigyview/zipball/4329d7931f7657f654e523c01218864787f023df",
-                "reference": "4329d7931f7657f654e523c01218864787f023df",
+                "url": "https://api.github.com/repos/ProdigyView-Toolkit/prodigyview/zipball/053cd02f168f3732d694de62ed763ff5b01be314",
+                "reference": "053cd02f168f3732d694de62ed763ff5b01be314",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0"
             },
             "require-dev": {
-                "guzzlehttp/guzzle": "^6.3",
-                "phpunit/php-code-coverage": "^6.1",
-                "phpunit/phpunit": "^7"
+                "phpunit/phpunit": "^9"
             },
             "type": "library",
             "autoload": {
@@ -52,27 +50,88 @@
                 "mvc",
                 "php"
             ],
-            "time": "2020-01-18T15:29:25+00:00"
+            "support": {
+                "issues": "https://github.com/ProdigyView-Toolkit/prodigyview/issues",
+                "source": "https://github.com/ProdigyView-Toolkit/prodigyview/tree/0.9.99"
+            },
+            "time": "2022-10-02T23:13:52+00:00"
         },
         {
-            "name": "teknomavi/tcmb",
-            "version": "v1.0.2",
+            "name": "teknomavi/common",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/teknomavi/tcmb.git",
-                "reference": "6368cd5b9add94cdca06ecd1c3470be5c9edb4af"
+                "url": "https://github.com/teknomavi/common.git",
+                "reference": "2938bb3969955c0ee8f046d163e98592de20fa24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/teknomavi/tcmb/zipball/6368cd5b9add94cdca06ecd1c3470be5c9edb4af",
-                "reference": "6368cd5b9add94cdca06ecd1c3470be5c9edb4af",
+                "url": "https://api.github.com/repos/teknomavi/common/zipball/2938bb3969955c0ee8f046d163e98592de20fa24",
+                "reference": "2938bb3969955c0ee8f046d163e98592de20fa24",
                 "shasum": ""
             },
             "require": {
-                "php": "> 5.3.0"
+                "php": "> 5.4"
             },
             "require-dev": {
-                "doctrine/cache": "dev-master"
+                "phpunit/phpunit": "4.8.x-dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teknomavi\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Teknomavi",
+                    "email": "info@teknomavi.com",
+                    "homepage": "http://www.teknomavi.com"
+                }
+            ],
+            "description": "Genel Yardımcı PHP Kütüphaneleri",
+            "homepage": "https://github.com/teknomavi/common",
+            "keywords": [
+                "Turkish",
+                "array2xml",
+                "arraytoxml",
+                "string",
+                "tr2en",
+                "trtoen",
+                "turkce"
+            ],
+            "support": {
+                "issues": "https://github.com/teknomavi/common/issues",
+                "source": "https://github.com/teknomavi/common/tree/master"
+            },
+            "time": "2016-06-07T21:03:21+00:00"
+        },
+        {
+            "name": "teknomavi/tcmb",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teknomavi/tcmb.git",
+                "reference": "d34dd14772e63b132af6397fff99347145d4e207"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teknomavi/tcmb/zipball/d34dd14772e63b132af6397fff99347145d4e207",
+                "reference": "d34dd14772e63b132af6397fff99347145d4e207",
+                "shasum": ""
+            },
+            "require": {
+                "php": "> 5.4",
+                "teknomavi/common": "~2.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.5.x-dev",
+                "phpunit/phpunit": "~4.8|~5.0",
+                "squizlabs/php_codesniffer": "~2.0"
             },
             "suggest": {
                 "doctrine/cache": "Kütüphanenin cache mekanizmasını kullanmasını sağlayarak performansını arttırır."
@@ -102,7 +161,11 @@
                 "kur",
                 "tcmb"
             ],
-            "time": "2015-12-17T20:52:26+00:00"
+            "support": {
+                "issues": "https://github.com/teknomavi/tcmb/issues",
+                "source": "https://github.com/teknomavi/tcmb/tree/v1.0.4"
+            },
+            "time": "2020-07-02T20:21:41+00:00"
         }
     ],
     "packages-dev": [],
@@ -113,5 +176,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.6.0"
 }
