@@ -1,0 +1,117 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e1f39ee6731087e6aa1a62396ef4dc7c",
+    "packages": [
+        {
+            "name": "prodigyview/prodigyview",
+            "version": "0.9.91",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ProdigyView-Toolkit/prodigyview.git",
+                "reference": "4329d7931f7657f654e523c01218864787f023df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProdigyView-Toolkit/prodigyview/zipball/4329d7931f7657f654e523c01218864787f023df",
+                "reference": "4329d7931f7657f654e523c01218864787f023df",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.3",
+                "phpunit/php-code-coverage": "^6.1",
+                "phpunit/phpunit": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "prodigyview\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Devin Dixon",
+                    "email": "ddixon@prodigyview.com",
+                    "homepage": "http://www.prodigyview.com",
+                    "role": "Entrepreneur & Developer"
+                }
+            ],
+            "description": "Complete PHP Toolkit",
+            "homepage": "https://github.com/ProdigyView-Toolkit/prodigyview",
+            "keywords": [
+                "mvc",
+                "php"
+            ],
+            "time": "2020-01-18T15:29:25+00:00"
+        },
+        {
+            "name": "teknomavi/tcmb",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teknomavi/tcmb.git",
+                "reference": "6368cd5b9add94cdca06ecd1c3470be5c9edb4af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teknomavi/tcmb/zipball/6368cd5b9add94cdca06ecd1c3470be5c9edb4af",
+                "reference": "6368cd5b9add94cdca06ecd1c3470be5c9edb4af",
+                "shasum": ""
+            },
+            "require": {
+                "php": "> 5.3.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "dev-master"
+            },
+            "suggest": {
+                "doctrine/cache": "Kütüphanenin cache mekanizmasını kullanmasını sağlayarak performansını arttırır."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teknomavi\\Tcmb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Teknomavi",
+                    "email": "info@teknomavi.com",
+                    "homepage": "http://www.teknomavi.com"
+                }
+            ],
+            "description": "T.C. Merkez Bankası üzerinden güncel döviz kurlarını çeker",
+            "homepage": "https://github.com/teknomavi/tcmb",
+            "keywords": [
+                "currency",
+                "doviz",
+                "kur",
+                "tcmb"
+            ],
+            "time": "2015-12-17T20:52:26+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

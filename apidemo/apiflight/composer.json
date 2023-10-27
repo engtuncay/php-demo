@@ -1,0 +1,7 @@
+{
+    "name": "kraftapi/apiflight",
+    "description": "demo",
+    "require": {
+        "mikecao/flight": "^1.3"
+    }
+}
