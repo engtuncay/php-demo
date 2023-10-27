@@ -2,6 +2,7 @@ SET max_heap_table_size = 1024*1024;
 TABLE t1 (id INT, UNIQUE(id)) ENGINE = MEMORY;
 SET max_heap_table_size = 1024*1024*2;
 CREATE TABLE t2 (id INT, UNIQUE(id)) ENGINE = MEMORY;
+
 CREATE TABLE test1 (
   id int(11) NOT NULL AUTO_INCREMENT,
   isim VARCHAR(50),

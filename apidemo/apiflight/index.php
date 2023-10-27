@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-//require_once 'vendor/++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++/flight/flight/Flight.php';
+//require_once 'vendor/flight/flight/Flight.php';
 //require 'flight/Flight.php';
 
 class UserCont {
@@ -13,8 +13,10 @@ Flight::route('/', function(){
   echo 'hello world!';
 });
 
-Flight::set('flight.log_errors', true);
+//Flight::set('flight.log_errors', true);
 
-Flight::route('/user/@id', array('UserCont','hello'));
+// Flight::route('/user/@id', array('UserCont','hello'));
 
 Flight::start();
+
+// echo 'api';

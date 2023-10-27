@@ -26,8 +26,8 @@ namespace isim {
 		/**
 		 * parametre get eder
 		 *
-		 ++PHP-BOLUM13.indd 331 27.02.2013 14:37
-		 332 PHP
+		 *++PHP-BOLUM13.indd 331 27.02.2013 14:37
+		 *332 PHP
 		 * @param string $key
 		 * @return string
 		 */
@@ -50,7 +50,7 @@ namespace isim {
 namespace sehir{
 	/**
 	 * isimler class
-	 * @author Mehmet Şamlı<mehmetsamli@gmail.com>
+	 * @author Mehmet Şamlı
 	 */
 	class Isimler{
 		/**

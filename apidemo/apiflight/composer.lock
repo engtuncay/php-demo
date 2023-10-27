@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "mikecao/flight",
-            "version": "v1.3.7",
+            "version": "v1.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikecao/flight.git",
-                "reference": "7d5970f7617861c868a5c728764421d8950faaf0"
+                "reference": "bc5e03ca59accb3ef37e31b6d4a2a9c78c7bb7ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikecao/flight/zipball/7d5970f7617861c868a5c728764421d8950faaf0",
-                "reference": "7d5970f7617861c868a5c728764421d8950faaf0",
+                "url": "https://api.github.com/repos/mikecao/flight/zipball/bc5e03ca59accb3ef37e31b6d4a2a9c78c7bb7ce",
+                "reference": "bc5e03ca59accb3ef37e31b6d4a2a9c78c7bb7ce",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,11 @@
             ],
             "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications.",
             "homepage": "http://flightphp.com",
-            "time": "2018-11-23T23:05:33+00:00"
+            "support": {
+                "issues": "https://github.com/mikecao/flight/issues",
+                "source": "https://github.com/mikecao/flight/tree/v1.3.9"
+            },
+            "time": "2021-04-05T01:36:59+00:00"
         }
     ],
     "packages-dev": [],
@@ -58,5 +62,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.6.0"
 }

@@ -242,7 +242,7 @@ function checkVariables(&$varList,&$where,$createGlobal=true)
 				foreach ($detailArr[2] as $functionArr)
 				{
 					$where[$detailArr[0]]=addslashes(stripslashes($where[$detailArr[0]]));
-					if(!$functionArr($where[$detailArr[0]],&$err))
+					if(!$functionArr($where[$detailArr[0]],$err)) // err başında & vardı
 					{						
 						$where[$detailArr[0]]=addslashes(stripslashes($where[$detailArr[0]]));
 						$state=false;
