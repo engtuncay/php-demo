@@ -1,0 +1,30 @@
+<html>
+ <head>
+  <title>Ajax Örneği</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="/js/ajax.js"></script>
+ </head>
+<body>
+<script type="text/javascript">
+function conn(){
+  var name = prompt("Lütfen adınızı Giriniz");
+  var param = 'isim='+name;
+  AJAX.connection('isim.php',param,isleme,'POST');
+}
+function isleme(){
+ if(http.readyState == 4){
+  if(http.status == 200){
+     var text = http.responseText;
+     var obj = document.getElementById('hello');
+     if(text==-1)
+      obj.innerHTML='İsim girmediniz.';
+     else
+      obj.innerHTML=text;
+    }
+ }
+}
+</script>
+<input type="button" value="Buton" onclick="conn()" />
+<div id="hello"></div>
+</body>
+</html>

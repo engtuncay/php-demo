@@ -1,0 +1,13 @@
+Deðerli okurlarýma öncelikle merhabalar.
+
+Uzmanlar için hazýrladýðým PHP 5 kitabýnda yer alan tüm kodlar burada verilmiþtir.
+Burada verilen kodlarý, kitap içerisinde anlatýldýðý gibi uyguladýðýnýzda kolaylýkla
+çalýþacaktýr. 
+Bizati burada verilen kodlar örnek olmaktan ibarettir. Profyonel projelerinizde örnekleri 
+"vpos uygulamasýný" birebir uygulamanýzý tavsiye etmiyorum. 
+Mantýk silsilesini kullanarak, projelerinize en uygun yapýyý bizzat siz geliþtirmeniz gerekir.
+Aksi takdirde kendinizi geliþtiremezsiniz.
+Unutmayýn, hazýra alýþýrsanýz kendinizi kesinlikle geliþtiremezsiniz.
+
+Ýyi çalýþmalar,
+Mehmet Þamlý

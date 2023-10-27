@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<m:musteri xmlns:m="http://musteri.banka.com">
+	<m:id>12345</m:id>
+	<m:ad>Mehmet</m:ad>
+	<m:soyad>Şamlı</m:soyad>
+	<m:tel tip="ev">0312-111-11-11</m:tel>
+	<m:tel tip="cep">0555-555-55-55</m:tel>
+	<m:adres>Büyük Mahalle Küçük Sokak No:5 Çankaya/ANKARA</m:adres>
+	<!-- aciklama alanının doldurulmasıisteğe bağlıdır -->
+	<m:aciklama />
+	<m:bakiye>1250.00</m:bakiye>
+</m:musteri>

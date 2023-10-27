@@ -1,0 +1,47 @@
+<html>
+ <head>
+  <title>Ajax Örneği</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="/js/ajax.js"></script>
+  <script type="text/javascript" src="/js/rowing.js"></script>
+ </head>
+<body>
+<script type="text/javascript">
+var starting = 1;
+function parsing(){
+ if(http.readyState == 4){
+  if(http.status == 200){
+   var data = eval('(' + http.responseText + ');');            
+   var len = data.dataArr.length;
+   ROW.removeTR();
+   for(var i=len-1; i >= 0;i--){
+    ROW.addTR(data.dataArr[i].row,data.dataArr[i].fname,data.dataArr[i].lname,data.dataArr[i].mail);
+   }
+   var text = '';
+   var s = 1;
+   i=0;     
+   while(i<data.num_rows){
+    if(starting==s)
+     text += s+ " ";
+    else
+     text += '<a href="#" onclick="AJAX.connection(\'veri.php\',\'start='+i+'\',\'\',\'POST\');starting='+s+'">'+s+'</a> ';
+    s++;
+    i=i+10;
+   }
+   document.getElementById('paging').innerHTML=text;     
+  }
+ }
+}
+AJAX.connection('veri.php','start=0','','POST');
+</script>
+<table id="listing" border="1" width="400">
+ <tr id="title" style="background:#CCC">
+  <td>No</td>
+  <td>Adı</td>
+  <td>Soyadı</td>
+  <td>Mail</td>
+ </tr>
+</table>
+<div id="paging"></div>
+</body>
+</html>
