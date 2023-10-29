@@ -5,7 +5,7 @@ class MolMikroService
   {
 
     // URL you want to send the POST request to
-    $url = "http://ozpas.duckdns.org:99/datamodel.asmx/$action";
+    $url = "http://ozpas.duckdns.org:8080/datamodel.asmx/$action";
 
     // Initialize cURL session
     $ch = curl_init($url);

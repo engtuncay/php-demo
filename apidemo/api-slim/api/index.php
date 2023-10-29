@@ -1,4 +1,8 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, PATCH, DELETE');
+header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Allow-Headers: Authorization, Content-Type, x-xsrf-token, x_csrftoken, Cache-Control, X-Requested-With');
 
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -40,6 +44,7 @@ $app->post('/mikro/{action}', function (Request $request, Response $response, ar
   //$response->getBody()->write("Hello, $action");
   $allPostPutVars = $request->getParsedBody();
   $response->getBody()->write(MolMikroService::request($action, $allPostPutVars));
+  $response->withHeader('Access-Control-Allow-Origin', '*');
   return $response;
 });
 
