@@ -6,50 +6,44 @@ use Selective\BasePath\BasePathMiddleware;
 use Slim\Factory\AppFactory;
 
 require '../vendor/autoload.php';
+require 'MolMikroService.php';
 
 $app = AppFactory::create();
 
+$app->setBasePath("/api"); // /myapp/api is the api folder (http://domain/myapp/api)
+
 $app->addRoutingMiddleware();
-$app->add(new BasePathMiddleware($app));
+//$app->add(new BasePathMiddleware($app));
+
 // hata middleware en son eklenir
 
 $app->addBodyParsingMiddleware();
 $app->addErrorMiddleware(true, true, true);
 
-// $app->post('/', function (Request $request, Response $response) {
-//   $response->getBody()->write('Hello World!');
-//   $allPostPutVars = $request->getParsedBody();
-//   $response->getBody()->write(json_encode($allPostPutVars));
-//   return $response;
-// });
-
 $app->get('', function (Request $request, Response $response) {
-  $response->getBody()->write('Hello World! Root2');
+  $response->getBody()->write('Ozpas Api Php...');
   return $response;
 });
 
 $app->get('/', function (Request $request, Response $response) {
-  $response->getBody()->write('Hello World! Root');
+  $response->getBody()->write('Ozpas Api Php');
   return $response;
 });
 
-$app->get('/add', function (Request $request, Response $response) {
+$app->get('/hello', function (Request $request, Response $response) {
   $response->getBody()->write('Hello World!');
   return $response;
 });
 
-$app->post('/getData', function (Request $request, Response $response) {
-  $response->getBody()->write('Get Data');
+$app->post('/mikro/{action}', function (Request $request, Response $response, array $args) {
+  $action = $args['action'];
+  //$response->getBody()->write("Hello, $action");
   $allPostPutVars = $request->getParsedBody();
-  $response->getBody()->write(json_encode($allPostPutVars));
+  $response->getBody()->write(MolMikroService::request($action, $allPostPutVars));
   return $response;
 });
 
-
 $app->run();
-
-
-
 
 // use Psr\Http\Message\ResponseInterface as Response;
 // use Psr\Http\Message\ServerRequestInterface as Request;
