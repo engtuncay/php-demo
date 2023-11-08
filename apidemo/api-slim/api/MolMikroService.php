@@ -8,13 +8,13 @@ class MolMikroService
     $url = "http://ozpas.duckdns.org:8080/datamodel.asmx/$action";
 
     // Initialize cURL session
-    $ch = curl_init($url);
+    $curl = curl_init($url);
 
     // Set cURL options for the POST request
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($arrPostData)); // http_build_query($data)
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json;charset=utf-8'));
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($arrPostData)); // http_build_query($data)
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json;charset=utf-8'));
     //curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 0);
     //curl_setopt($ch, CURLOPT_TIMEOUT, 3000); //timeout in seconds
     //curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
@@ -23,19 +23,19 @@ class MolMikroService
     // Set other options if needed, like headers or authentication
 
     // Execute the POST request
-    $response = curl_exec($ch);
+    $response = curl_exec($curl);
 
     // Check for cURL errors
-    if (curl_errno($ch)) {
-      return 'cURL error: ' . curl_error($ch);
+    if (curl_errno($curl)) {
+      return 'cURL error: ' . curl_error($curl);
     }
 
     // Close cURL session
-    curl_close($ch);
+    curl_close($curl);
 
     // Handle the response
     if ($response === false) {
-      return 'POST request failed.';
+      return 'Curl POST request failed.';
     } else {
       //'POST request was successful. Response: ' .
       return $response;
