@@ -1,3 +1,5 @@
 pdo-demo1/vendor/
 vendor/
 oryospec.php
+config.php
+php-email/extorsoft/ajaxProcessor.php
