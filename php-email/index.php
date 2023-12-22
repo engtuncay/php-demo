@@ -119,9 +119,11 @@
   <section class="service-details-wrapper section-padding">
     <div class="container">
       <div class="row">
-        <div class="col-xl-12 col-12 pe-xl-5">
+        <div  id="cont2" class="col-xl-12 col-12 pe-xl-5">
           <div class="service-details-contents">
             <div class="service-contact-form">
+
+
               <div class="contact-form">
                 <h2>İş Başvuru Formu</h2>
                 <form action="" method="post" class="basic-grey">
@@ -960,7 +962,7 @@
 
                         </td>
                         <td>
-                          <input type="button" name="gonder" value="Gönder" class="btn"
+                          <input type="button" name="gonder" value="Gönder" class="btn" id="btnBasvuru"
                             onclick="_sendIsBasvuruFormu();" />
                         </td>
                       </tr>
@@ -968,10 +970,13 @@
                   </div>
                 </form>
 
+
               </div>
+              
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -1016,7 +1021,7 @@
     }
 
     function _getIsBasvuruFormuSablon() {
-      return "<table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Kişisel Bilgileriniz</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>{$vars.tcno}</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[TCNo]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Adı Soyadı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[AdıSoyadı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Baba Adı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[BabaAdı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Doğum Yeri</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[DoğumYeri]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Doğum Tarihi</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[DoğumTarihi]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Ehliyet Sınıfı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[EhliyetSınıfı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Medeni Durum ve Çocuk Sayısı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[MedeniDurumveÇocukSayısı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Sabıkanız Var Mı?</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[SabıkanızVarMı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Askerlik Durumu</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[AskerlikDurumu]</td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>İletişim Bilgileriniz</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Cep Telefonu</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[CepTelefonu]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>E-Posta Adresiniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[EPostaAdresiniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Ev Adresi</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[EvAdresi]</td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Eğitim Bilgileriniz</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Branş (Meslek)</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[BranşMeslek]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Öğrenim Durumu</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[ÖğrenimDurumu]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Bilgisayar Kullanımı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[BilgisayarKullanımı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Pazarlama Tecrübeniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[PazarlamaTecrübeniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Gaziantep Bölge Bilginiz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[GaziantepBölgeBilginiz]</td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>İş Tecrübeniz</td></tr><tr><td colspan='3'><table style='border: 1px solid #ccc; width:100%;'><tr><td style='vertical-align:bottom; font-weight:bold; color:black; width:25px;'>#</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Çalışma Dönemi</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Şirket</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Göreviniz</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Ayrılma Sebebi</td></tr><tr><td style='width:25px;'>1</td><td style='width:25%;'>[ÇalışmaDönemi1]</td><td style='width:25%;'>[Şirket1]</td><td style='width:25%;'>[Göreviniz1]</td><td style='width:25%;'>[AyrılmaSebebi1]</td></tr><tr><td style='width:25px;'>2</td><td style='width:25%;'>[ÇalışmaDönemi2]</td><td style='width:25%;'>[Şirket2]</td><td style='width:25%;'>[Göreviniz2]</td><td style='width:25%;'>[AyrılmaSebebi2]</td></tr><tr><td style='width:25px;'>3</td><td style='width:25%;'>[ÇalışmaDönemi3]</td><td style='width:25%;'>[Şirket3]</td><td style='width:25%;'>[Göreviniz3]</td><td style='width:25%;'>[AyrılmaSebebi3]</td></tr></table></td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Referanslarınız</td></tr><tr><td colspan='3'><table style='border: 1px solid #ccc; width:100%;'><tr><td style='vertical-align:bottom; font-weight:bold; color:black; width:25px;'>#</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Adı Soyadı</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Şirket</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Görev</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Telefon</td></tr><tr><td style='width:25px;'>1</td><td style='width:25%;'>[AdıSoyadı1]</td><td style='width:25%;'>[Şirket1_1]</td><td style='width:25%;'>[Görev1]</td><td style='width:25%;'>[Telefon1]</td></tr><tr><td style='width:25px;'>2</td><td style='width:25%;'>[AdıSoyadı2]</td><td style='width:25%;'>[Şirket2_2]</td><td style='width:25%;'>[Görev2]</td><td style='width:25%;'>[Telefon2]</td></tr><tr><td style='width:25px;'>3</td><td style='width:25%;'>[AdıSoyadı3]</td><td style='width:25%;'>[Şirket3_3]</td><td style='width:25%;'>[Görev3]</td><td style='width:25%;'>[Telefon3]</td></tr></table></td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Gelir Bilgileriniz</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Eviniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[Eviniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Üzerinize Kayıtlı Gayrimenkul Var Mı?</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[ÜzerinizeKayıtlıGayrimenkulVarMı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Varsa Değeri</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[VarsaDeğeri]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Şirketimizin Hangi Bölümünde Çalışabilirsiniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[ŞirketimizinHangiBölümündeÇalışabilirsiniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Daha Önceki İşyerinde Aldığınız Maaş Tutarı ?</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[DahaÖncekiİşyerindeAldığınızMaaşTutarı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Ne Kadar Maaş Giderlerinizi Karşılar ?</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[NeKadarMaaşGiderleriniziKarşılar]</td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Diğer Bilgiler</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Hayattaki İdealiniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[Hayattakiİdealiniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Eklemek İstediğiniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[Eklemekİstediğiniz]</td></tr></table>";
+      return "<table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Kişisel Bilgileriniz</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>TC No</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[TCNo]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Adı Soyadı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[AdıSoyadı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Baba Adı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[BabaAdı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Doğum Yeri</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[DoğumYeri]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Doğum Tarihi</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[DoğumTarihi]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Ehliyet Sınıfı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[EhliyetSınıfı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Medeni Durum ve Çocuk Sayısı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[MedeniDurumveÇocukSayısı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Sabıkanız Var Mı?</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[SabıkanızVarMı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Askerlik Durumu</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[AskerlikDurumu]</td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>İletişim Bilgileriniz</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Cep Telefonu</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[CepTelefonu]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>E-Posta Adresiniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[EPostaAdresiniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Ev Adresi</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[EvAdresi]</td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Eğitim Bilgileriniz</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Branş (Meslek)</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[BranşMeslek]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Öğrenim Durumu</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[ÖğrenimDurumu]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Bilgisayar Kullanımı</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[BilgisayarKullanımı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Pazarlama Tecrübeniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[PazarlamaTecrübeniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Gaziantep Bölge Bilginiz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[GaziantepBölgeBilginiz]</td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>İş Tecrübeniz</td></tr><tr><td colspan='3'><table style='border: 1px solid #ccc; width:100%;'><tr><td style='vertical-align:bottom; font-weight:bold; color:black; width:25px;'>#</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Çalışma Dönemi</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Şirket</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Göreviniz</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Ayrılma Sebebi</td></tr><tr><td style='width:25px;'>1</td><td style='width:25%;'>[ÇalışmaDönemi1]</td><td style='width:25%;'>[Şirket1]</td><td style='width:25%;'>[Göreviniz1]</td><td style='width:25%;'>[AyrılmaSebebi1]</td></tr><tr><td style='width:25px;'>2</td><td style='width:25%;'>[ÇalışmaDönemi2]</td><td style='width:25%;'>[Şirket2]</td><td style='width:25%;'>[Göreviniz2]</td><td style='width:25%;'>[AyrılmaSebebi2]</td></tr><tr><td style='width:25px;'>3</td><td style='width:25%;'>[ÇalışmaDönemi3]</td><td style='width:25%;'>[Şirket3]</td><td style='width:25%;'>[Göreviniz3]</td><td style='width:25%;'>[AyrılmaSebebi3]</td></tr></table></td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Referanslarınız</td></tr><tr><td colspan='3'><table style='border: 1px solid #ccc; width:100%;'><tr><td style='vertical-align:bottom; font-weight:bold; color:black; width:25px;'>#</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Adı Soyadı</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Şirket</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Görev</td><td style='vertical-align:bottom; font-weight:bold; color:black; width:25%;'>Telefon</td></tr><tr><td style='width:25px;'>1</td><td style='width:25%;'>[AdıSoyadı1]</td><td style='width:25%;'>[Şirket1_1]</td><td style='width:25%;'>[Görev1]</td><td style='width:25%;'>[Telefon1]</td></tr><tr><td style='width:25px;'>2</td><td style='width:25%;'>[AdıSoyadı2]</td><td style='width:25%;'>[Şirket2_2]</td><td style='width:25%;'>[Görev2]</td><td style='width:25%;'>[Telefon2]</td></tr><tr><td style='width:25px;'>3</td><td style='width:25%;'>[AdıSoyadı3]</td><td style='width:25%;'>[Şirket3_3]</td><td style='width:25%;'>[Görev3]</td><td style='width:25%;'>[Telefon3]</td></tr></table></td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Gelir Bilgileriniz</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Eviniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[Eviniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Üzerinize Kayıtlı Gayrimenkul Var Mı?</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[ÜzerinizeKayıtlıGayrimenkulVarMı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Varsa Değeri</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[VarsaDeğeri]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Şirketimizin Hangi Bölümünde Çalışabilirsiniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[ŞirketimizinHangiBölümündeÇalışabilirsiniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Daha Önceki İşyerinde Aldığınız Maaş Tutarı ?</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[DahaÖncekiİşyerindeAldığınızMaaşTutarı]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Ne Kadar Maaş Giderlerinizi Karşılar ?</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[NeKadarMaaşGiderleriniziKarşılar]</td></tr></table><br/><table style='border: 1px solid #ccc; width:100%;'><tr><td colspan='3' style='border: 1px solid #ccc; vertical-align:bottom; font-weight:bold; color:red;'>Diğer Bilgiler</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Hayattaki İdealiniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[Hayattakiİdealiniz]</td></tr><tr><td style='border: 1px solid #ccc; width:300px; vertical-align:bottom; font-weight:bold; color:black;'>Eklemek İstediğiniz</td><td style='border: 1px solid #ccc; vertical-align:bottom;'>[Eklemekİstediğiniz]</td></tr></table>";
     }
 
     function _sendIsBasvuruFormu() {
@@ -1029,10 +1034,10 @@
       var DoğumTarihiAyValue = $("#DoğumTarihiAy").val();
       var DoğumTarihiYılValue = $("#DoğumTarihiYıl").val();
 
-      // if ($("#AdıSoyadı").val().trim().length == 0)
-      // {
-      //{*    return _showMessageBoxWarning("{$vars.enter_name_surname}");*}
-      // }
+      if ($("#AdıSoyadı").val().trim().length == 0) {
+        return _showMessageBoxWarning("Lütfen Adı Soyadı alanını doldurunuz.");
+      }
+
       //
       // if ($("#BabaAdı").val().trim().length == 0)
       // {
@@ -1061,16 +1066,16 @@
       // {
       //{*    return _showMessageBoxWarning("{$vars.enter_birth_year}");*}
       // }
-      //
-      // if ($("#CepTelefonu").val().trim().length == 0)
-      // {
-      //{*    return _showMessageBoxWarning("{$vars.enter_phone}");*}
-      // }
-      //
-      // if (!_isValidEmail($("#EPostaAdresiniz").val().trim()))
-      // {
-      //{*    return _showMessageBoxWarning("{$vars.enter_email}");*}
-      // }
+
+      if ($("#CepTelefonu").val().trim().length == 0) {
+        return _showMessageBoxWarning("Lütfen cep telefonu alanını doldurunuz.");
+      }
+
+
+      if (!_isValidEmail($("#EPostaAdresiniz").val().trim())) {
+        return _showMessageBoxWarning("Lütfen geçerli bir eposta adresi giriniz.");
+      }
+
       //
       // if ($("#EvAdresi").val().trim().length == 0)
       // {
@@ -1250,22 +1255,25 @@
       // }
       //});
 
+      $("#btnBasvuru").attr("disabled", true);
+
       $.post("./extorsoft/ajaxProcessor.php", { process: "IS_BASVURU_FORMU", data: dataValue, adiSoyadi: AdiSoyadi, ePostaAdresiniz: EPostaAdresiniz, tcNo: TCNo })
         .done(function (data) {
           //alert("Data Loaded: " + data);
           console.log(data);
+          const objResponse = JSON.parse(data);
 
-          if (data.result == "1") {
+          if (objResponse.result == "1") {
             _showMessageBoxSuccess("İş başvuru talebiniz başarılı bir şekilde iletildi.");
             console.log(data)
           } else {
             _showMessageBoxInfo("Başarısız");
-            console.log(response);
           }
-
+          $("#btnBasvuru").attr("disabled", false);
         })
         .fail(function () {
-          alert("error")
+          alert("error");
+          $("#btnBasvuru").attr("disabled", false);
         });
 
     }

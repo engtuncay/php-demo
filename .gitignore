@@ -3,3 +3,4 @@ vendor/
 oryospec.php
 config.php
 php-email/extorsoft/ajaxProcessor.php
+php-email/extorsoft/configOzpas.php

@@ -1,0 +1,14 @@
+{
+  "name": "orsoft/extphp",
+  "description": "php extension for utility",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Tuncay",
+      "email": "tunc270@gmail.com"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "^6.9"
+  }
+}
