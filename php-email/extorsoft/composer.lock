@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00a47617a79fc9c6c36eb83ca0d91ee0",
+    "content-hash": "a9f047bfa29d06622098b5a265e16549",
     "packages": [
+        {
+            "name": "engtuncay/phputils",
+            "version": "v0.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/engtuncay/phputils.git",
+                "reference": "d4120b83f2b9a8aa765c4ad820ebadab77aead00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/d4120b83f2b9a8aa765c4ad820ebadab77aead00",
+                "reference": "d4120b83f2b9a8aa765c4ad820ebadab77aead00",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Engtuncay\\Phputils\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tuncay",
+                    "email": "tunc270@gmail.com"
+                }
+            ],
+            "description": "php utility classes",
+            "support": {
+                "source": "https://github.com/engtuncay/phputils/tree/v0.0.6",
+                "issues": "https://github.com/engtuncay/phputils/issues"
+            },
+            "time": "2023-12-25T09:27:14+00:00"
+        },
         {
             "name": "phpmailer/phpmailer",
             "version": "v6.9.1",

@@ -9,6 +9,13 @@
     }
   ],
   "require": {
-    "phpmailer/phpmailer": "^6.9"
-  }
+    "phpmailer/phpmailer": "^6.9",
+    "engtuncay/phputils": "^0.0.6"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/engtuncay/phputils.git"
+    }
+  ]
 }
