@@ -4,94 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5bbc9d9ab06791bd323d5233e158e56",
+    "content-hash": "7d7089fa65edc4a105eac60d02ea5b93",
     "packages": [
         {
             "name": "engtuncay/phputils",
-            "version": "v1.1",
+            "version": "v0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/engtuncay/phputils.git",
-                "reference": "7ca50fcb6e52aa590c78bf329cb01ef8312ab22f"
+                "reference": "a79acf778a2c319c3fb3e8ceeb9c885e32e2bdad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/7ca50fcb6e52aa590c78bf329cb01ef8312ab22f",
-                "reference": "7ca50fcb6e52aa590c78bf329cb01ef8312ab22f",
+                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/a79acf778a2c319c3fb3e8ceeb9c885e32e2bdad",
+                "reference": "a79acf778a2c319c3fb3e8ceeb9c885e32e2bdad",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.0",
-                "symfony/polyfill-iconv": "^1.11"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8|~5.0",
-                "squizlabs/php_codesniffer": "~2.0"
+                "phpunit/phpunit": "^9.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "engtuncay\\phputils\\": "src/"
+                    "Engtuncay\\Phputils\\": "src/"
                 }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "engtuncay\\Tests\\": "tests/Teknomavi/Tests"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "engtuncay",
-                    "email": "tuncayorak@gmail.com"
-                }
-            ],
-            "description": "Genel Yardımcı PHP Kütüphaneleri",
-            "homepage": "https://github.com/engtuncay/phputils",
-            "keywords": [
-                "utils"
-            ],
-            "support": {
-                "issues": "https://github.com/engtuncay/phputils/issues",
-                "source": "https://github.com/engtuncay/phputils/tree/master"
-            },
-            "time": "2020-05-17T18:34:59+00:00"
-        },
-        {
-            "name": "symfony/polyfill-iconv",
-            "version": "v1.17.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-iconv.git",
-                "reference": "c4de7601eefbf25f9d47190abe07f79fe0a27424"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/c4de7601eefbf25f9d47190abe07f79fe0a27424",
-                "reference": "c4de7601eefbf25f9d47190abe07f79fe0a27424",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "suggest": {
-                "ext-iconv": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.17-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Iconv\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -99,41 +38,127 @@
             ],
             "authors": [
                 {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+                    "name": "Tuncay",
+                    "email": "tunc270@gmail.com"
                 }
             ],
-            "description": "Symfony polyfill for the Iconv extension",
-            "homepage": "https://symfony.com",
+            "description": "php utility classes",
+            "support": {
+                "issues": "https://github.com/engtuncay/phputils/issues",
+                "source": "https://github.com/engtuncay/phputils/tree/v0.0.7"
+            },
+            "time": "2024-01-13T20:05:56+00:00"
+        },
+        {
+            "name": "teknomavi/common",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teknomavi/common.git",
+                "reference": "2938bb3969955c0ee8f046d163e98592de20fa24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teknomavi/common/zipball/2938bb3969955c0ee8f046d163e98592de20fa24",
+                "reference": "2938bb3969955c0ee8f046d163e98592de20fa24",
+                "shasum": ""
+            },
+            "require": {
+                "php": "> 5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.x-dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teknomavi\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Teknomavi",
+                    "email": "info@teknomavi.com",
+                    "homepage": "http://www.teknomavi.com"
+                }
+            ],
+            "description": "Genel Yardımcı PHP Kütüphaneleri",
+            "homepage": "https://github.com/teknomavi/common",
             "keywords": [
-                "compatibility",
-                "iconv",
-                "polyfill",
-                "portable",
-                "shim"
+                "Turkish",
+                "array2xml",
+                "arraytoxml",
+                "string",
+                "tr2en",
+                "trtoen",
+                "turkce"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.17.0"
+                "issues": "https://github.com/teknomavi/common/issues",
+                "source": "https://github.com/teknomavi/common/tree/master"
             },
-            "funding": [
+            "time": "2016-06-07T21:03:21+00:00"
+        },
+        {
+            "name": "teknomavi/tcmb",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teknomavi/tcmb.git",
+                "reference": "d34dd14772e63b132af6397fff99347145d4e207"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teknomavi/tcmb/zipball/d34dd14772e63b132af6397fff99347145d4e207",
+                "reference": "d34dd14772e63b132af6397fff99347145d4e207",
+                "shasum": ""
+            },
+            "require": {
+                "php": "> 5.4",
+                "teknomavi/common": "~2.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.5.x-dev",
+                "phpunit/phpunit": "~4.8|~5.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "suggest": {
+                "doctrine/cache": "Kütüphanenin cache mekanizmasını kullanmasını sağlayarak performansını arttırır."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teknomavi\\Tcmb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
                 {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
+                    "name": "Teknomavi",
+                    "email": "info@teknomavi.com",
+                    "homepage": "http://www.teknomavi.com"
                 }
             ],
-            "time": "2020-05-12T16:47:27+00:00"
+            "description": "T.C. Merkez Bankası üzerinden güncel döviz kurlarını çeker",
+            "homepage": "https://github.com/teknomavi/tcmb",
+            "keywords": [
+                "currency",
+                "doviz",
+                "kur",
+                "tcmb"
+            ],
+            "support": {
+                "issues": "https://github.com/teknomavi/tcmb/issues",
+                "source": "https://github.com/teknomavi/tcmb/tree/v1.0.4"
+            },
+            "time": "2020-07-02T20:21:41+00:00"
         }
     ],
     "packages-dev": [],
@@ -144,5 +169,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.6.0"
 }

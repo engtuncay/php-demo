@@ -4,7 +4,7 @@ function test(){
     return 'test';
 }
 
-//echo test();
+print_r(test());
 
 $test = function($par){
     return 'test ' . $par;
@@ -14,7 +14,7 @@ $test2 = function() use ($test){
     return 'test2 ' .  $test('test3');
 };
 
-echo $test2();
+print_r($test2());
 
 //echo $test('tayfun');
 

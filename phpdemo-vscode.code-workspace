@@ -1,8 +1,11 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "preview-in-browser.domain": "http://localhost:8080",
+    "preview-in-browser.removeStartString": "/Y:/xampp/htdocs/"
+  }
 }

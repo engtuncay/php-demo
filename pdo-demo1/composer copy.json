@@ -2,11 +2,17 @@
   "name": "orakyazilim/pdo-demo1",
   "description": "description",
   "minimum-stability": "stable",
-  "license": "MIT",
+  "license": "mit",
   "authors": [
     {
-      "name": "Tuncay Orak",
+      "name": "Tuncay",
       "email": "tuncayorak@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/engtuncay/phputils"
     }
   ],
   "require": {

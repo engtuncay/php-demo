@@ -6,7 +6,7 @@
     }
 
     $a = test();
-    //echo $a;
+    echo $a;
 
     function topla($sayi1 = 2, $sayi2 = 10)
     {
@@ -14,7 +14,7 @@
     }
 
     $toplam = topla();
-    //echo $toplam;
+    echo $toplam;
 
     $ad = 'Tayfun';
 
@@ -30,11 +30,11 @@
         return $ad . ' ' . $soyad;
     }
 
-    //echo adsoyad('Erbilen');
+    echo adsoyad('Erbilen');
 
     $yazi = "tayfun";
 
-    //echo substr($yazi, 0, 10) . '..';
+    echo substr($yazi, 0, 10) . '..';
 
     function kisalt($str, $limit = 10)
     {

@@ -3,7 +3,7 @@
 /*
     Değişkenler;
         $ işareti ile tanımlanırlar.
-        Harf ve ya _ karakteri ile başlarlar.
+        Harf veya _ karakteri ile başlarlar.
         Sayı ile başlayamazlar.
         Türkçe karakterler içerebilir.
         Büyük-küçük harfe duyarlıdırlar. (case-sensitive)
