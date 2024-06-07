@@ -1,0 +1,8 @@
+[2024-06-07 06:16:46] logtesti.WARNING: Foo [] []
+[2024-06-07 06:16:46] logtesti.ERROR: Bar [] []
+[2024-06-07 06:27:01] logentegre.WARNING: Foo [] []
+[2024-06-07 06:27:01] logentegre.ERROR: Bar [] []
+[2024-06-07 06:27:01] logentegre.WARNING: Warning [] []
+[2024-06-07 06:27:04] logentegre.WARNING: Foo [] []
+[2024-06-07 06:27:04] logentegre.ERROR: Bar [] []
+[2024-06-07 06:27:04] logentegre.WARNING: Warning [] []
