@@ -25,44 +25,45 @@ $('.tarih').datepicker({
 // prepare-execute
 
 $where = [];
-$sql = 'SELECT dersler.id, dersler.baslik, GROUP_CONCAT(kategoriler.ad) as kategori_adi, GROUP_CONCAT(kategoriler.id) as kategori_id, dersler.onay FROM dersler
+    $sql = 'SELECT dersler.id, dersler.baslik, GROUP_CONCAT(kategoriler.ad) as kategori_adi, GROUP_CONCAT(kategoriler.id) as kategori_id, dersler.onay FROM dersler
 INNER JOIN kategoriler ON FIND_IN_SET(kategoriler.id, dersler.kategori_id)';
-if (isset($_GET['arama']) && !empty($_GET['arama'])){
-    $where[] = '(dersler.baslik LIKE "%' . $_GET['arama'] . '%" || dersler.icerik LIKE "%' . $_GET['arama'] . '%")';
-}
-if (isset($_GET['baslangic']) && !empty($_GET['baslangic']) && isset($_GET['bitis']) && !empty($_GET['bitis'])){
-    $where[] = 'dersler.tarih BETWEEN "' . $_GET['baslangic'] . ' 00:00:00" AND "' . $_GET['bitis'] . ' 23:59:59"';
-}
-if (count($where) > 0){
-    $sql .= ' WHERE ' . implode(' && ', $where);
-}
-$sql .= ' GROUP BY dersler.id
+
+    if (isset($_GET['arama']) && !empty($_GET['arama'])) {
+        $where[] = '(dersler.baslik LIKE "%' . $_GET['arama'] . '%" || dersler.icerik LIKE "%' . $_GET['arama'] . '%")';
+    }
+    if (isset($_GET['baslangic']) && !empty($_GET['baslangic']) && isset($_GET['bitis']) && !empty($_GET['bitis'])) {
+        $where[] = 'dersler.tarih BETWEEN "' . $_GET['baslangic'] . ' 00:00:00" AND "' . $_GET['bitis'] . ' 23:59:59"';
+    }
+    if (count($where) > 0) {
+        $sql .= ' WHERE ' . implode(' && ', $where);
+    }
+    $sql .= ' GROUP BY dersler.id
 ORDER BY dersler.id DESC';
 
-$dersler = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+    $dersler = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
-/*
-$sorgu = $db->prepare('SELECT * FROM dersler WHERE id = ?');
-$sorgu->execute([
-    3
-]);
-$dersler = $sorgu->fetch(PDO::FETCH_ASSOC);
-*/
+    /*
+    $sorgu = $db->prepare('SELECT * FROM dersler WHERE id = ?');
+    $sorgu->execute([
+        3
+    ]);
+    $dersler = $sorgu->fetch(PDO::FETCH_ASSOC);
+    */
 
-?>
+    ?>
 
 <?php if ($dersler): ?>
     <ul>
         <?php foreach ($dersler as $ders): ?>
             <li>
                 <?php echo $ders['baslik'] ?>
-                <?php 
-                $kategoriAdlari = explode(',', $ders['kategori_adi']);
-                $kategoriIdleri = explode(',', $ders['kategori_id']);
-                foreach ($kategoriAdlari as $key => $val){
-                    echo '<a href="index.php?sayfa=kategori&id=' . $kategoriIdleri[$key] . '">' . $val . '</a> ';
-                }
-                ?>
+                <?php
+                    $kategoriAdlari = explode(',', $ders['kategori_adi']);
+            $kategoriIdleri = explode(',', $ders['kategori_id']);
+            foreach ($kategoriAdlari as $key => $val) {
+                echo '<a href="index.php?sayfa=kategori&id=' . $kategoriIdleri[$key] . '">' . $val . '</a> ';
+            }
+            ?>
                 <div>
                     <?php if ($ders['onay'] == 1): ?>
                         <a href="index.php?sayfa=oku&id=<?php echo $ders['id'] ?>">[OKU]</a>

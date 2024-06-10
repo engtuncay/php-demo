@@ -1,10 +1,9 @@
 <?php
+
 class Fruit
 {
-  public $name;
+    public $name;
 }
 
 $apple = new Fruit();
 var_dump($apple instanceof Fruit);
-
-?>

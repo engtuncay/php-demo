@@ -4,6 +4,9 @@ use Teknomavi\Tcmb\Doviz;
 
 require_once('./vendor/autoload.php');
 
+
+require_once('../libs/FiPdoExtend.php');
+
 use Engtuncay\Phputils\FiPdoExtend;
 
 try {

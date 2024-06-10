@@ -3,3 +3,5 @@
 <a href="index.php?sayfa=insert">[İçerik Ekle]</a>
 
 <hr>
+
+<a href="./OrnekTablo.php">Örnek Tablo Oluştur</a>

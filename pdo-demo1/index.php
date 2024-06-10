@@ -2,52 +2,50 @@
 
 ob_start();
 
-require_once 'baglan.php';
+require_once('./AppConfig.php');
 
 require_once 'header.php';
 
-$_GET = array_map(function($get){
+$_GET = array_map(function ($get) {
     return htmlspecialchars(trim($get));
 }, $_GET);
 
-if (!isset($_GET['sayfa'])){
+if (!isset($_GET['sayfa'])) {
     $_GET['sayfa'] = 'index';
 }
 
-Switch ($_GET['sayfa']){
-
+switch ($_GET['sayfa']) {
+    
     case 'index':
         require_once 'homepage.php';
-    break;
+        break;
 
     case 'insert':
         require_once 'insert.php';
-    break;
+        break;
 
     case 'oku':
         require_once 'oku.php';
-    break;
+        break;
 
     case 'guncelle':
         require_once 'guncelle.php';
-    break;
+        break;
 
     case 'sil':
         require_once 'sil.php';
-    break;
+        break;
 
     case 'kategoriler':
         require_once 'kategoriler.php';
-    break;
+        break;
 
     case 'kategori_ekle':
         require_once 'kategori_ekle.php';
-    break;
+        break;
 
     case 'kategori':
         require_once 'kategori.php';
-    break;
+        break;
 
 }
-
-?>
