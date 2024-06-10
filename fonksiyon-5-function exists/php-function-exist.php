@@ -1,5 +1,9 @@
 <?php
 
+
+
+// function exist
+
 function test2(){
     return 'test';
 }
@@ -22,5 +26,7 @@ function kisalt($str, $limit = 10)
     }
     return $str;
 }
+
+
 
 ?>
