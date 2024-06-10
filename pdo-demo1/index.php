@@ -3,6 +3,7 @@
 ob_start();
 
 require_once 'baglan.php';
+
 require_once 'header.php';
 
 $_GET = array_map(function($get){

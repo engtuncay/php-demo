@@ -1,50 +1,57 @@
 <?php
 
-    function test()
-    {
-        return "test";
-    }
+function test()
+{
+  return "test";
+}
 
-    $a = test();
-    echo $a;
+$a = test();
+echo $a;
+echo "\n";
 
-    function topla($sayi1 = 2, $sayi2 = 10)
-    {
-        return ($sayi1 + $sayi2);
-    }
 
-    $toplam = topla();
-    echo $toplam;
+function topla($sayi1 = 2, $sayi2 = 10)
+{
+  return ($sayi1 + $sayi2);
+}
 
-    $ad = 'Tayfun';
+$toplam = topla();
+echo $toplam;
+echo "\n";
 
-    /*
-        global
-        $GLOBALS
-    */
+/*
+  global
+  $GLOBALS
+*/
 
-    function adsoyad($soyad)
-    {
-        // $GLOBALS['ad']
-        global $ad;
-        return $ad . ' ' . $soyad;
-    }
+$ad = 'Tayfun';
 
-    echo adsoyad('Erbilen');
+function adsoyad($soyad)
+{
+  // $GLOBALS['ad']
+  global $ad;
+  return $ad . ' ' . $soyad;
+}
 
-    $yazi = "tayfun";
+echo adsoyad('Erbilen');
+echo "\n";
 
-    echo substr($yazi, 0, 10) . '..';
+//-----------------
 
-    function kisalt($str, $limit = 10)
-    {
-        $karakterSayisi = strlen($str);
-        if ($karakterSayisi > $limit){
-            $str = substr($str, 0, $limit) . '..';
-        }
-        return $str;
-    }
+$yazi = "tayfun";
 
-    echo kisalt($yazi, 5);
+echo substr($yazi, 0, 10) . '..';
+echo "\n";
 
-?>
+//-----------------
+
+function kisalt($str, $limit = 10)
+{
+  $karakterSayisi = strlen($str);
+  if ($karakterSayisi > $limit) {
+    $str = substr($str, 0, $limit) . '..';
+  }
+  return $str;
+}
+
+echo kisalt($yazi, 5);

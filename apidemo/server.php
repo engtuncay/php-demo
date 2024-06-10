@@ -12,7 +12,7 @@ $articles = array(
 );
 
 //Create And Process The Current Request
-$request = new Request()
+$request = new Request();
 
 //Get The Request Method(GET, POST, PUT, DELETE)
 $method = strtolower($request->getRequestMethod());

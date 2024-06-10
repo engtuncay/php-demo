@@ -7,7 +7,7 @@
         Sayı ile başlayamazlar.
         Türkçe karakterler içerebilir.
         Büyük-küçük harfe duyarlıdırlar. (case-sensitive)
-    Atama Operatörü (=) 
+    Atama Operatörü (=)
 */
 
 $tayfun = "tayfun erbilen";
@@ -18,5 +18,3 @@ $Tayfun = "tayfun erbilen 2";
 $tayfuN = "tayfun erbilen 3";
 
 echo $tayfun;
-
-?>
