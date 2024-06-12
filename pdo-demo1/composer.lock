@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d7089fa65edc4a105eac60d02ea5b93",
+    "content-hash": "52cb2307656dc883ca649fec2d5ed4d8",
     "packages": [
         {
             "name": "engtuncay/phputils",
-            "version": "v0.0.7",
+            "version": "0.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/engtuncay/phputils.git",
-                "reference": "a79acf778a2c319c3fb3e8ceeb9c885e32e2bdad"
+                "reference": "c228910eb0c2b69be13da1bc6a9fd7558272cb79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/a79acf778a2c319c3fb3e8ceeb9c885e32e2bdad",
-                "reference": "a79acf778a2c319c3fb3e8ceeb9c885e32e2bdad",
+                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/c228910eb0c2b69be13da1bc6a9fd7558272cb79",
+                "reference": "c228910eb0c2b69be13da1bc6a9fd7558272cb79",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=7.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.0"
@@ -42,12 +42,12 @@
                     "email": "tunc270@gmail.com"
                 }
             ],
-            "description": "php utility classes",
+            "description": "tunc php utility classes",
             "support": {
                 "issues": "https://github.com/engtuncay/phputils/issues",
-                "source": "https://github.com/engtuncay/phputils/tree/v0.0.7"
+                "source": "https://github.com/engtuncay/phputils/tree/v0.0.18"
             },
-            "time": "2024-01-13T20:05:56+00:00"
+            "time": "2024-06-11T05:58:12+00:00"
         },
         {
             "name": "teknomavi/common",

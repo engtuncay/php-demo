@@ -11,7 +11,7 @@ use PDO;
  * 2024-06-10
  *
  */
-class FiPdoExtend extends \PDO
+class FiPdoExtLocal extends \PDO
 {
     public $debug = false;
 
