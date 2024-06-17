@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "engtuncay/phputils": "^0.0.18",
+    "engtuncay/phputils": "^0.0.19",
     "teknomavi/tcmb": "1.0.4"
   }
 }

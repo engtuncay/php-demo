@@ -1,18 +1,13 @@
 {
-    "name": "tuncay/pdo-demo2",
-    "type": "project",
-    "autoload": {
-        "psr-4": {
-            "Tuncay\\PdoDemo2\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Tuncay",
-            "email": "tunc270@gmail.com"
-        }
-    ],
-    "require": {
-        "engtuncay/phputils": "^0.0.12"
+  "name": "tuncay/pdo-demo2",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Tuncay",
+      "email": "tunc270@gmail.com"
     }
+  ],
+  "require": {
+    "engtuncay/phputils": "^0.0.19"
+  }
 }
