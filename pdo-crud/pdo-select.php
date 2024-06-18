@@ -8,7 +8,7 @@ try {
   // set the resulting array to associative
   $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
-  foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row) {
+  foreach ($stmt->fetchAll() as $row) {
     foreach ($row as $field => $value) {
       echo $field . ' => ' . $value . '<br/>';
     }
