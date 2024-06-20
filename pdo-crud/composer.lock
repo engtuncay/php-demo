@@ -4,27 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02bc2fb3019198b2d6b5cfbfa23314a7",
+    "content-hash": "5102878eb5b29f318645b4f442b17324",
     "packages": [
         {
             "name": "engtuncay/phputils",
-            "version": "0.0.19",
+            "version": "0.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/engtuncay/phputils.git",
-                "reference": "cc6fadbc71aa85eb7e65e60b53960cce323cc300"
+                "reference": "2c01689aa66f08c5ddf36221fa4b4ba81972af82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/cc6fadbc71aa85eb7e65e60b53960cce323cc300",
-                "reference": "cc6fadbc71aa85eb7e65e60b53960cce323cc300",
+                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/2c01689aa66f08c5ddf36221fa4b4ba81972af82",
+                "reference": "2c01689aa66f08c5ddf36221fa4b4ba81972af82",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.0"
+                "monolog/monolog": "^1.27",
+                "phpunit/phpunit": "^11.0"
             },
             "type": "library",
             "autoload": {
@@ -38,16 +39,16 @@
             ],
             "authors": [
                 {
-                    "name": "Tuncay",
-                    "email": "tunc270@gmail.com"
+                    "name": "Tuncay Orak",
+                    "email": "tuncayorak@gmail.com"
                 }
             ],
-            "description": "tunc php utility classes",
+            "description": "Tunc Php Utility Classes",
             "support": {
                 "issues": "https://github.com/engtuncay/phputils/issues",
-                "source": "https://github.com/engtuncay/phputils/tree/v0.0.19"
+                "source": "https://github.com/engtuncay/phputils/tree/v0.0.25"
             },
-            "time": "2024-06-11T08:12:39+00:00"
+            "time": "2024-06-20T09:37:05+00:00"
         }
     ],
     "packages-dev": [],
