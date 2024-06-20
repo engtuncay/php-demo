@@ -6,4 +6,3 @@ if (extension_loaded("curl")) {
     echo "Curl kurulu değil.";
 }
 
-?>
