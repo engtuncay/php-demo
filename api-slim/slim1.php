@@ -6,13 +6,13 @@
 
 // require __DIR__ . '/vendor/autoload.php';
 
-// // Instantiate App
+// Instantiate App
 // $app = AppFactory::create();
 
-// // Add error middleware
+// Add error middleware
 // $app->addErrorMiddleware(true, true, true);
 
-// // Add routes
+// Add routes
 // $app->get('/', function (Request $request, Response $response) {
 //     $response->getBody()->write('<a href="/hello/world">Try /hello/world</a>');
 //     return $response;

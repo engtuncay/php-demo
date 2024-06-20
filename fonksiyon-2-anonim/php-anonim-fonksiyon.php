@@ -46,5 +46,3 @@ $arr = array_map(function($isim) use($soyad){
 }, $arr);
 
 print_r($arr);
-
-?>
