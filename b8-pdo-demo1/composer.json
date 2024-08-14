@@ -12,5 +12,13 @@
   "require": {
     "engtuncay/phputils": "^0.0.19",
     "teknomavi/tcmb": "1.0.4"
+  },
+  "scripts": {
+    "start-lumen": [
+      "php -s localhost:8015 -t ./"
+    ],
+    "script-calistirmak-icin": [
+      "composer run-script  start-lumen --timeout=0"
+    ]
   }
 }

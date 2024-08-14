@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52cb2307656dc883ca649fec2d5ed4d8",
+    "content-hash": "4e45180717bf56cd9fadbdac53106592",
     "packages": [
         {
             "name": "engtuncay/phputils",
-            "version": "0.0.18",
+            "version": "0.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/engtuncay/phputils.git",
-                "reference": "c228910eb0c2b69be13da1bc6a9fd7558272cb79"
+                "reference": "cc6fadbc71aa85eb7e65e60b53960cce323cc300"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/c228910eb0c2b69be13da1bc6a9fd7558272cb79",
-                "reference": "c228910eb0c2b69be13da1bc6a9fd7558272cb79",
+                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/cc6fadbc71aa85eb7e65e60b53960cce323cc300",
+                "reference": "cc6fadbc71aa85eb7e65e60b53960cce323cc300",
                 "shasum": ""
             },
             "require": {
@@ -45,9 +45,9 @@
             "description": "tunc php utility classes",
             "support": {
                 "issues": "https://github.com/engtuncay/phputils/issues",
-                "source": "https://github.com/engtuncay/phputils/tree/v0.0.18"
+                "source": "https://github.com/engtuncay/phputils/tree/v0.0.19"
             },
-            "time": "2024-06-11T05:58:12+00:00"
+            "time": "2024-06-11T08:12:39+00:00"
         },
         {
             "name": "teknomavi/common",
