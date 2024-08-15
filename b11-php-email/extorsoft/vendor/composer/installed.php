@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'orsoft/extphp',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '6f20848c66b4887c38765af408489a43707bbf33',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'engtuncay/phputils' => array(
+            'pretty_version' => 'v0.0.6',
+            'version' => '0.0.6.0',
+            'reference' => 'd4120b83f2b9a8aa765c4ad820ebadab77aead00',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../engtuncay/phputils',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'orsoft/extphp' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '6f20848c66b4887c38765af408489a43707bbf33',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.9.1',
+            'version' => '6.9.1.0',
+            'reference' => '039de174cd9c17a8389754d3b877a2ed22743e18',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
