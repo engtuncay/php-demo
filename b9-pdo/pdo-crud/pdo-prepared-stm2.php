@@ -1,4 +1,5 @@
 <?php
+use Engtuncay\Phputils\core\FiKeyBean;
 
 try {
   // prepare sql and bind parameters
@@ -13,7 +14,11 @@ try {
   $arr = array();
   $arr["firstname"] = $firstname;
   $arr["lastname"] = $lastname;
-  $stmt->execute($arr);
+
+  $fkbParams = new FiKeyBean();
+  $fkbParams->put("firstname", $firstname);
+  $fkbParams->put("lastname", $lastname);
+  $stmt->execute($fkbParams->getArrParams());
 
   echo "New records created successfully";
 } catch (PDOException $e) {

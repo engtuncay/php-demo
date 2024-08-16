@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5102878eb5b29f318645b4f442b17324",
+    "content-hash": "b645374f9a19545a4e9d59a11aadd4da",
     "packages": [
         {
             "name": "engtuncay/phputils",
-            "version": "0.0.25",
+            "version": "0.0.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/engtuncay/phputils.git",
-                "reference": "2c01689aa66f08c5ddf36221fa4b4ba81972af82"
+                "reference": "f96931f7029975dd91c3ff2c2e7995a0248229c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/2c01689aa66f08c5ddf36221fa4b4ba81972af82",
-                "reference": "2c01689aa66f08c5ddf36221fa4b4ba81972af82",
+                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/f96931f7029975dd91c3ff2c2e7995a0248229c8",
+                "reference": "f96931f7029975dd91c3ff2c2e7995a0248229c8",
                 "shasum": ""
             },
             "require": {
@@ -46,9 +46,9 @@
             "description": "Tunc Php Utility Classes",
             "support": {
                 "issues": "https://github.com/engtuncay/phputils/issues",
-                "source": "https://github.com/engtuncay/phputils/tree/v0.0.25"
+                "source": "https://github.com/engtuncay/phputils/tree/v0.0.26"
             },
-            "time": "2024-06-20T09:37:05+00:00"
+            "time": "2024-08-16T05:57:03+00:00"
         }
     ],
     "packages-dev": [],
