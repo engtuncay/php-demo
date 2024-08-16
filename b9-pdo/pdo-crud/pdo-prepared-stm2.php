@@ -6,8 +6,8 @@ try {
   VALUES (:firstname,:lastname)");
 
   // insert a row
-  $firstname = "John";
-  $lastname = "Doe";
+  $firstname = "M";
+  $lastname = "Y";
   //$email = "john@example.com";
 
   $arr = array();
