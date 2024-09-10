@@ -18,10 +18,10 @@ class ConfigStore
         $dbName = "myDB";
 
         $connConfig = new TorConnConfig();
-        $connConfig->setUsername($servername);
-        $connConfig->setUsername($username);
-        $connConfig->setPassword($password);
-        $connConfig->setDbname($dbName);
+    $connConfig->setUserName($servername);
+    $connConfig->setUserName($username);
+    $connConfig->setUserPass($password);
+    $connConfig->setDbName($dbName);
 
         return $connConfig;
     }

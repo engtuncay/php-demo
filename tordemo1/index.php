@@ -1,3 +1,8 @@
+<?php
+//define('ABSPATH', dirname(__FILE__) . '/');
+//echo  __DIR__;
+require_once "vendor/autoload.php";
+?>
 <!DOCTYPE html>
 <html>
 
@@ -18,6 +23,7 @@
 <body>
 <p></p>
 <a href="./pdo/pdo-conn.php">Pdo Conn</a>
+<a href="./pdo/pdo-conn2.php">Pdo Conn 2</a>
 <a href="./pdo/pdo-create-db.php">Create Db</a>
 <a href="./pdo/pdo-create-table.php">Create Table</a>
 <p>Classes</p>

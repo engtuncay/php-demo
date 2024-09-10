@@ -4,10 +4,10 @@ class TorPdoConnFactory
 
     public static function makeConnection(TorConnConfig $config): ?PDO
     {
-        $hostname = $config->getHostname();
-        $dbname = $config->getDbname();
-        $username = $config->getUsername();
-        $password = $config->getPassword();
+    $hostname = $config->getServerName();
+    $dbname = $config->getDbName();
+    $username = $config->getUserName();
+    $password = $config->getUserPass();
 
         try {
 

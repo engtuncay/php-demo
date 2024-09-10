@@ -1,73 +1,73 @@
 <?php
 class TorConnConfig
 {
-  public $hostname;
-  public $dbname; 
-  public $username;
-  public $password;
+  public $serverName;
+  public $dbName;
+  public $userName;
+  public $userPass;
 
     /**
      * @return mixed
      */
-    public function getHostname()
+  public function getServerName()
     {
-        return $this->hostname;
+    return $this->serverName;
     }
 
     /**
      * @param mixed $hostname
      */
-    public function setHostname($hostname)
+  public function setServerName($hostname)
     {
-        $this->hostname = $hostname;
+    $this->serverName = $hostname;
     }
 
     /**
      * @return mixed
      */
-    public function getDbname()
+  public function getDbName()
     {
-        return $this->dbname;
+    return $this->dbName;
     }
 
     /**
      * @param mixed $dbname
      */
-    public function setDbname($dbname)
+  public function setDbName($dbname)
     {
-        $this->dbname = $dbname;
+    $this->dbName = $dbname;
     }
 
     /**
      * @return mixed
      */
-    public function getUsername()
+  public function getUserName()
     {
-        return $this->username;
+    return $this->userName;
     }
 
     /**
      * @param mixed $username
      */
-    public function setUsername($username)
+  public function setUserName($username)
     {
-        $this->username = $username;
+    $this->userName = $username;
     }
 
     /**
      * @return mixed
      */
-    public function getPassword()
+  public function getUserPass()
     {
-        return $this->password;
+    return $this->userPass;
     }
 
     /**
      * @param mixed $password
      */
-    public function setPassword($password)
+  public function setUserPass($password)
     {
-        $this->password = $password;
+    $this->userPass = $password;
     }
 
 }

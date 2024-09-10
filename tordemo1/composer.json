@@ -1,2 +1,5 @@
 {
+  "require": {
+    "engtuncay/phputils": "^0.0"
+  }
 }
