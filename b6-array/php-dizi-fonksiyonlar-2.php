@@ -31,12 +31,6 @@ Array
 )
 */
 
-
-/*
-
-*/
-
-
 $arr = [1,2,3,4,5];
 $arr2 = array_map('filtrele', $arr);
 $arr2 = array_map(function($val){

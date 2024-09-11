@@ -13,6 +13,8 @@
     array_key_exists()
 */
 
+// Associative Array
+
 $arr = [
     'ad' => 'tayfun',
     'soyad' => 'erbilen',
@@ -192,5 +194,5 @@ if (_array_key_exists('e', $arr)) {
 c anahtarı var!
 */
 
-
-?>
+// array oluşturma
+print_r(array(1,5));

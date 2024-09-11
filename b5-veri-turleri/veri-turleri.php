@@ -23,4 +23,9 @@ echo gettype($null);
 echo "<br>";
 echo gettype($array);
 
+/* Output
+NULL
+array
+*/
+
 ?>

@@ -26,6 +26,9 @@ require_once "vendor/autoload.php";
 <a href="./pdo/pdo-conn2.php">Pdo Conn 2</a>
 <a href="./pdo/pdo-create-db.php">Create Db</a>
 <a href="./pdo/pdo-create-table.php">Create Table</a>
+<a href="./pdo/pdo-insert1-ps.php">Insert - Prep Statement</a>
+<a href="./pdo/pdo-select1-ps.php">Select (1) - Ps1</a>
+<a href="./pdo/pdo-select2-ps.php">Select (2) - Ps1</a>
 <p>Classes</p>
 <a href="./classes/classDemo1.php">Class Demo 1</a>
 <a href="./classes/classDemo2.php">Class Demo 2</a>

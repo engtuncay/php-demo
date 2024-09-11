@@ -1,5 +1,5 @@
 <?php
-require_once './pdo-db-conn.php';
+require_once './pdo-db-config.php';
 
 try {
   // sql to create table
@@ -11,12 +11,14 @@ try {
   reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   )";
 
+  AppContext::$conn->exec($sql);
+
   // use exec() because no results are returned
-  $conn->exec($sql);
+  //$conn->exec($sql);
   echo "Table MyGuests created successfully";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }
 
-$conn = null;
+//$conn = null;
 ?>
