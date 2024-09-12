@@ -76,6 +76,5 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
-tordemo1/composer.lock
-tordemo1/composer.lock
-tordemo1/composer.lock
+composer.lock
+composer.lock2
