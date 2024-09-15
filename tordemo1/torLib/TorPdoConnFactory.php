@@ -1,13 +1,18 @@
 <?php
+
+namespace torLib;
+
+use TorConnConfig;
+
 class TorPdoConnFactory
 {
 
     public static function makeConnection(TorConnConfig $config): ?PDO
     {
-    $hostname = $config->getServerName();
-    $dbname = $config->getDbName();
-    $username = $config->getUserName();
-    $password = $config->getUserPass();
+        $hostname = $config->getServerName();
+        $dbname = $config->getDbName();
+        $username = $config->getUserName();
+        $password = $config->getUserPass();
 
         try {
 

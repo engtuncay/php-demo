@@ -1,5 +1,8 @@
 <?php
 
+namespace torLib;
+use TorConnConfig;
+
 /**
  * All Repos extend this class
  */
@@ -19,7 +22,7 @@ class AbsTorRepoPdo
     /**
      * @return mixed
      */
-    public function getConn() : PDO
+    public function getConn(): PDO
     {
         return $this->conn;
     }

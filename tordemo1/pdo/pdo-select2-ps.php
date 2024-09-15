@@ -16,7 +16,7 @@ try {
     // set the resulting array to associative
     $stmt->setFetchMode(PDO::FETCH_ASSOC); //$result =
 
-    $all = $stmt->fetchAll(); // array
+    $all = $stmt->fetchAll(); // array data
 
     foreach ($all as $row) {
         foreach ($row as $field => $value) {

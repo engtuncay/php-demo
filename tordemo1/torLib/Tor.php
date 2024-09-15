@@ -1,6 +1,6 @@
 <?php
 
-namespace dto;
+namespace torLib;
 
 /**
  * Return Type for Operations

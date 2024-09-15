@@ -21,7 +21,7 @@ Homestead.json
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
-and this for PHPStorm:
+# and this for PHPStorm:
 
 # Created by https://www.gitignore.io/api/phpstorm
 

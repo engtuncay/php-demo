@@ -13,107 +13,93 @@
     array_key_exists()
 */
 
-// Associative Array
+// Array Tanımlama
 
-$arr = [
-    'ad' => 'tayfun',
-    'soyad' => 'erbilen',
-    'yas' => 24
-];
+
+// ## Associative Array
+$arr = [ 'ad' => 'tayfun', 'soyad' => 'erbilen', 'yas' => 24 ];
 
 print_r($arr);
 
-/* ** Output
- Array
-(
-    [ad] => tayfun
-    [soyad] => erbilen
-    [yas] => 24
-)
+/* Output
+ Array ( [ad] => tayfun [soyad] => erbilen [yas] => 24 )
  */
+
+echo "<br/>";
 
 var_dump($arr);
 
-/* ** Output
-array(3) {
-  ["ad"]=>
-  string(6) "tayfun"
-  ["soyad"]=>
-  string(7) "erbilen"
-  ["yas"]=>
-  int(24)
-}
-*/
+/* Output
+ * array(3) { ["ad"]=> string(6) "tayfun" ["soyad"]=> string(7) "erbilen" ["yas"]=> int(24) }
+ */
+
+echo "<br/>";
+
+// ## explode ile string parçalayıp array yaparız.
 
 $test = 'tayfun,erbilen,udemy';
 $arr = explode(',', $test);
 
 print_r($arr);
 
-/*
-Array
-(
-    [0] => tayfun
-    [1] => erbilen
-    [2] => udemy
-)
-*/
+/**
+ * Array ( [0] => tayfun [1] => erbilen [2] => udemy )
+ */
 
+echo "<br/>";
+
+// ## implode ile array birleştirip string haline getiririz.
 $string = implode('|', $arr);
 
 echo $string;
-echo "\n";
+
+/**
+ * tayfun|erbilen|udemy
+ */
+
+echo "<br/>";
+
 echo count($arr);
-echo "\n";
 
-/*
-tayfun|erbilen|udemy
-3
-*/
+/**
+ * 3
+ */
 
-/*
+echo "<br/>";
+
 if (is_array($arr)){
-    echo 'bu bir dizidir';
+    echo '$arr bir dizidir';
 } else {
-    echo 'bu bir dizi değildir!';
+    echo '$arr dizi değildir!';
 }
-*/
 
+echo "<br/>";
+
+// ## shuffle diziyi karıştırmak için kullanılır
 $arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 shuffle($arr);
 
 print_r($arr);
 
-/*
-Array
-(
-    [0] => 5
-    [1] => 4
-    [2] => 1
-    [3] => 10
-    [4] => 9
-    [5] => 6
-    [6] => 3
-    [7] => 8
-    [8] => 2
-    [9] => 7
-)
-*/
+/**
+ * Array ( [0] => 7 [1] => 10 [2] => 6 [3] => 2 [4] => 3 [5] => 5 [6] => 1 [7] => 9 [8] => 8 [9] => 4 )
+ */
 
+echo "<br/>";
+
+// ## array_combine key dizisi, value dizisi verilerek, sırayla alarak associative array yapar
 $keys = ['ad', 'soyad'];
 $values = ['tayfun', 'erbilen'];
 
 $arr = array_combine($keys, $values);
 
-/*
-Array
-(
-    [ad] => tayfun
-    [soyad] => erbilen
-)
-*/
-
 print_r($arr);
+
+/**
+ * Array ( [ad] => tayfun [soyad] => erbilen )
+ */
+
+echo "<br/>";
 
 $arr = ['tayfun', 'erbilen', 'udemy', 'tayfun', 'udemy'];
 $arr2 = array_count_values($arr);
@@ -160,7 +146,7 @@ $arr = [
 ];
 
 
-if (array_key_exists('ad', $arr)){
+if (array_key_exists('ad', $arr)) {
     echo 'ad anahtarı var!';
 } else {
     echo 'ad anahtarı yok!';
@@ -195,4 +181,4 @@ c anahtarı var!
 */
 
 // array oluşturma
-print_r(array(1,5));
+print_r(array(1, 5));

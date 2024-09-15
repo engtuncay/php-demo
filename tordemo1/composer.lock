@@ -8,19 +8,20 @@
     "packages": [
         {
             "name": "engtuncay/phputils",
-            "version": "0.0.31",
+            "version": "0.0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/engtuncay/phputils.git",
-                "reference": "3f33bdf67c248743c5870c3c040fde6644fe6ea4"
+                "reference": "fd0d93379a507a25669dda8697065762008286b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/3f33bdf67c248743c5870c3c040fde6644fe6ea4",
-                "reference": "3f33bdf67c248743c5870c3c040fde6644fe6ea4",
+                "url": "https://api.github.com/repos/engtuncay/phputils/zipball/fd0d93379a507a25669dda8697065762008286b4",
+                "reference": "fd0d93379a507a25669dda8697065762008286b4",
                 "shasum": ""
             },
             "require": {
+                "ext-pdo": "*",
                 "php": ">=7.4"
             },
             "require-dev": {
@@ -46,9 +47,9 @@
             "description": "Tunc Php Utility Classes",
             "support": {
                 "issues": "https://github.com/engtuncay/phputils/issues",
-                "source": "https://github.com/engtuncay/phputils/tree/v0.0.31"
+                "source": "https://github.com/engtuncay/phputils/tree/v0.0.36"
             },
-            "time": "2024-09-11T08:19:11+00:00"
+            "time": "2024-09-11T10:24:18+00:00"
         }
     ],
     "packages-dev": [],

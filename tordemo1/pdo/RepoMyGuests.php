@@ -1,4 +1,7 @@
 <?php
+
+use torLib\AbsTorRepoPdo;
+
 class RepoMyGuests extends AbsTorRepoPdo
 {
     public function __construct(string $connProfile)
