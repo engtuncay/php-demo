@@ -65,5 +65,3 @@ echo preg_replace($pattern, "W3Schools", $str);
 
 //////////////////////////////////////////////
 
-
-
