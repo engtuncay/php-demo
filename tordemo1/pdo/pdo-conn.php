@@ -1,5 +1,7 @@
 <?php
-require_once "./pdo-db-vars.php";
+
+require_once __DIR__ . "/pdo-db-vars.php";
+
 
 $conn = null;
 

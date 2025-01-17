@@ -14,3 +14,4 @@ if (AppContext::$conn->getBoConnection()) {
 } else {
     echo "Connection failed: " . AppContext::$conn->getErrorMessage();
 }
+

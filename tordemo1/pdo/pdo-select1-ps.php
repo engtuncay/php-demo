@@ -1,5 +1,7 @@
 <?php
-require_once './pdo-db-config.php';
+
+require_once __DIR__ . '/pdo-db-config.php';
+
 
 try {
 
