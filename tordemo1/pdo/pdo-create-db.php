@@ -1,12 +1,15 @@
 <?php
-require_once("./pdo-db-config.php");
-require_once("./pdo-conn2.php");
+
+require_once __DIR__ . '/pdo-db-config.php';
+//require_once __DIR__ . './pdo-conn2.php';
+
+echo "start";
+echo "\n";
 
 $sql = "CREATE DATABASE test";
 // use exec() because no results are returned
 
 AppContext::$conn->execFiWitEchoErr($sql);
-
 
 //if(WebSiteConfig::$conn->exec($sql)){}
 //echo "Database created successfully<br>";
@@ -26,5 +29,5 @@ AppContext::$conn->execFiWitEchoErr($sql);
 //  echo "Error creating database: " . $conn->error;
 //}
 
-$conn->close();
+//$conn->close();
 ?>
