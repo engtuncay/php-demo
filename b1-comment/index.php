@@ -12,7 +12,8 @@
 
   <?php echo "tayfun erbilen"; ?>
   <br>
-  <?= "tayfun erbilen" ?>
+  <?="tayfun erbilen"?>
+  <br>
 
   <?php
 

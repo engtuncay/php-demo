@@ -79,3 +79,4 @@ fabric.properties
 # *.ipr
 composer.lock
 composer.lock2
+/.idea

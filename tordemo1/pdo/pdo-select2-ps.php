@@ -11,13 +11,6 @@ try {
 
     $fkbParams->genType = new FicDemo();
 
-
-
-
-
-
-
-
     $fkbParams->put("id",1);
 
     $stmt->execute($fkbParams->getParams());
