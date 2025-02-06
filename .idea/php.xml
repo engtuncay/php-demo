@@ -44,6 +44,11 @@
       <path value="$PROJECT_DIR$/b14-api/apidemo/vendor/composer" />
     </include_path>
   </component>
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="localhost" id="ebc740e6-d8c6-4953-a5af-0fc693f0735b" name="localhost xampp" port="8080" />
+    </servers>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
