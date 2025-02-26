@@ -2,7 +2,7 @@
 
 class Fruit
 {
-    public $name;
+  public $name;
 }
 
 $apple = new Fruit();
