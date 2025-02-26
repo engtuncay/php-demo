@@ -2,7 +2,7 @@
 
 // Composer'ın autoload dosyasını dahil ettik
 require_once "vendor/autoload.php";
-require_once "logconfig.php";
+require_once 'logconfig.php';
 
 //use Monolog\Logger;
 
@@ -11,6 +11,7 @@ require_once "logconfig.php";
 //$log->pushHandler(new StreamHandler('logs/logdosyam.log', Logger::WARNING));
 
 // add records to the log
+
 $log->addWarning('Foo');
 $log->addError('Bar');
 $log->addWarning('Warning');
