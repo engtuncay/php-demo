@@ -1,5 +1,5 @@
 <?php
-use Engtuncay\Phputils8\FiDto\FiKeybean;
+use Engtuncay\Phputils8\FiDtos\FiKeybean;
 
 require __DIR__ . '/vendor/autoload.php';
 

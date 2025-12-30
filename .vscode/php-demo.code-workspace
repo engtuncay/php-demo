@@ -7,5 +7,7 @@
       "path": "../../phputils8"
     }
   ],
-	"settings": {}
+  "settings": {
+    "window.title": "pw-php-workshop"
+  }
 }
