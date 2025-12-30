@@ -1,0 +1,11 @@
+{
+  "repositories": [
+    {
+      "type": "path",
+      "url": "./../../phputils8"
+    }
+  ],
+  "require": {
+    "engtuncay/phputils8": "^0.0"
+  }
+}

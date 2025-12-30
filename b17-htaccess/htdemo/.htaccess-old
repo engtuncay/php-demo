@@ -1,0 +1,44 @@
+RewriteEngine On
+# If you installed CodeIgniter in a subfolder, you will need to
+# change the following line to match the subfolder you need.
+# http://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewritebase
+# RewriteBase /
+# Redirect Trailing Slashes..
+# SetEnv MY_VARIABLE hellowo
+RewriteEngine On
+
+RewriteRule .* - [E=REQFILE:%{REQUEST_FILENAME}]
+# REQUEST_FILENAME absolute path gibi
+# Y:/devrepo-oraksoft-web/htaccess-demo/index.php
+RewriteRule .* - [E=REQURI:%{REQUEST_URI}]
+# REQURI bir nevi relative path gibi
+# /htaccess-demo/index.php
+RewriteRule  .* - [E=THEREQ:%{THE_REQUEST}]
+# 
+#RewriteRule ^([\s\S]*)$ - [E=TEMPVAR:$1]
+
+# Eğer istenen dosya mevcut değilse ve bir dizin değilse
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
+
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_URI} (.+)/$
+# RewriteRule ^ %1 [L,R=301]
+# Last,Redirect 301 kodu gönder
+# ^: Herhangi bir URL ile eşleşir (satır başı)
+# %1: Bir önceki RewriteCond'da parantezle yakalanan ilk grupun değerini kullanır. Yani, (.+) ile eşleşen kısım.
+
+
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_URI} (.+)/$
+# RewriteRule ^ %1 [L,R=301]
+
+# http://localhost:8080/htaccess-demo/about/
+# http://localhost:8080/htaccess-demo/about yapar
+
+# # Rewrite "www.example.com -> example.com"
+# RewriteCond %{HTTPS} !=on
+# RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+# RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+

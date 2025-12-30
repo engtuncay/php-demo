@@ -1,0 +1,32 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+# public içerirse /public/test/file -> http://example.com/test/file 
+RewriteRule ^ %1 [L,NE,R=302]
+# public icermiyorsa uygulanacak kural
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+
+ 
+# `L`: Kuraldan sonra yeni bir RewriteRule kontrol edilmez.
+# `NC`: Büyük/küçük harf duyarsız bir eşleşme yapılır.
+
+#### **2. [NE] (No Escape / Kaçış Yok):**
+# - Varsayılan olarak Apache, **RewriteRule'un çıktısında özel karakterleri otomatik olarak kodlar**. Örneğin, `&` -> `%26` olarak dönüştürülür.
+# - **[NE]**, özel karakterlerin kodlanmasını engeller. Eğer çıktınızda `&`, `?`, `=` gibi semboller varsa bu semboller olduğu gibi (kaçış yapmadan) bırakılır.
+# - **Kullanım gerekli mi?** Genellikle, yalnızca özel semboller kullanılıyorsa (`?`, `&`) ve bunların URL'de doğru görünmesini istiyorsanız gereklidir.
+
+
+
+## ------------------------------------------
+#Options -Indexes
+RewriteEngine On
+RewriteBase /onlinekraftphp/
+
+# Eğer zaten "public/" ile başlıyorsak hiçbir şey yapma
+RewriteCond %{REQUEST_URI} ^/onlinekraftphp/public/ [NC]
+RewriteRule ^ - [L]
+
+# Fiziksel bir dosya ya da dizin değilse istekleri "public/" klasörüne yönlendir
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L,QSA]
