@@ -1,4 +1,8 @@
 {
+  "name": "engtuncay/demo-phputils8",
+  "description": "Demo Project for OrakSoft Php Utility Library (Php 8)",
+  "type": "project",
+  "version": "0.0.1",
   "repositories": [
     {
       "type": "path",
@@ -7,5 +11,13 @@
   ],
   "require": {
     "engtuncay/phputils8": "^0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DemoPhputils8\\": "src/"
+    }
+  },
+  "scripts": {
+    "comins": "composer install"
   }
 }

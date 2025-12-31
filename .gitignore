@@ -107,3 +107,4 @@ dist/
 .cache/
 tmp/
 .idea/phpdemo.iml
+.filogs/

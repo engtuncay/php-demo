@@ -1,6 +1,8 @@
 <?php
 
+use Engtuncay\Phputils8\FiApps\FiAppConfig;
 use Engtuncay\Phputils8\FiDtos\FiKeybean;
+use Engtuncay\Phputils8\FiLogs\FiLog;
 use Engtuncay\Phputils8\FiXmls\FiXmlReq;
 
 require __DIR__ . '/vendor/autoload.php';
@@ -63,5 +65,8 @@ $fkbParams->add("pwsgTxDurum", "ok");
 $fkbParams->add("pwsgTxSipId", 1111);
 
 $fiXml = new FiXmlReq($txXml, $fkbParams);
+
+//FiLog::initLogger2("./.filogs/logdemo.log");
+//FiLog::$log?->info("Final XML:");
 
 echo $fiXml->getXmlFinal();
