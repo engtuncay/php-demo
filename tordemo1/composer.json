@@ -1,5 +1,26 @@
 {
+  "name": "oraksoft/phpworkshop-demo1",
+  "description": "PHP Workshop Demo 1",
+  "license": "MIT",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../../phputils8"
+    }
+  ],
   "require": {
-    "engtuncay/phputils": "^0.0"
+    "engtuncay/phputils": "*",
+    "engtuncay/phputils8": "^0.0.48"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "fi-comp-up": "composer update",
+    "fi-comp-ins": "composer install"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phpworkshop\\": "src/"
+    }
   }
 }

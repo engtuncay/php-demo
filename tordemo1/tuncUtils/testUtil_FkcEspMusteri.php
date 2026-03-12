@@ -18,13 +18,5 @@ function testAbsClass(AbsFkbTable $absClass)
 testAbsClass($fkc);
 echo PHP_EOL;
 
-$colName = new FiCol("id");
-//$colName->ofcTxFieldName = "deneme";
-echo "Field:" . $colName->ofcTxFieldName;
-echo PHP_EOL;
-echo "Header:" . $colName->ofcTxHeader;
-echo PHP_EOL;
-//echo "Label:" . FiString::orEmpty($colName->txLabel);
-
 // objelerde alanlara array gibi ulaşamayız.
 // $colName['ofcTxFieldName'] = "idx";
