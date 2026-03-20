@@ -2,8 +2,6 @@
 require_once __DIR__ . "/../vendor/autoload.php";
 
 use Engtuncay\Phputils8\FiCols\AbsFkbTable;
-use Engtuncay\Phputils\core\FiString;
-use Engtuncay\Phputils\meta\FiCol;
 use Phpworkshop\FkcEspMusteri;
 
 //var_dump(class_exists('Engtuncay\\Phputils8\\FiCols\\AbsFkbTable'));

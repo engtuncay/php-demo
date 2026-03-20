@@ -1,6 +1,8 @@
 <?php
 
 namespace torLib;
+
+use PDO;
 use TorConnConfig;
 
 /**
