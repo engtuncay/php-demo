@@ -17,4 +17,4 @@ testAbsClass($fkc);
 echo PHP_EOL;
 
 // objelerde alanlara array gibi ulaşamayız.
-// $colName['ofcTxFieldName'] = "idx";
+// $colName['fcTxFieldName'] = "idx";

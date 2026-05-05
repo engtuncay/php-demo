@@ -19,12 +19,12 @@ testAbsClass($fkc);
 echo PHP_EOL;
 
 $colName = new FiCol("id");
-//$colName->ofcTxFieldName = "deneme";
-echo "Field:" . $colName->ofcTxFieldName;
+//$colName->fcTxFieldName = "deneme";
+echo "Field:" . $colName->fcTxFieldName;
 echo PHP_EOL;
-echo "Header:" . $colName->ofcTxHeader;
+echo "Header:" . $colName->fcTxHeader;
 echo PHP_EOL;
 //echo "Label:" . FiString::orEmpty($colName->txLabel);
 
 // objelerde alanlara array gibi ulaşamayız.
-// $colName['ofcTxFieldName'] = "idx";
+// $colName['fcTxFieldName'] = "idx";
