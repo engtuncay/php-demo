@@ -1,7 +1,7 @@
 <?php
 
 use Engtuncay\Phputils8\FiApps\FiAppConfig;
-use Engtuncay\Phputils8\FiDtos\FiKeybean;
+use Engtuncay\Phputils8\FiDtos\Fkb;
 use Engtuncay\Phputils8\FiLogs\FiLog;
 use Engtuncay\Phputils8\FiXmls\FiXmlReq;
 
@@ -60,7 +60,7 @@ $txXml = <<<END
 </soap:Envelope>
 END;
 
-$fkbParams = new FiKeybean();
+$fkbParams = new Fkb();
 $fkbParams->add("pwsgTxDurum", "ok");
 $fkbParams->add("pwsgTxSipId", 1111);
 

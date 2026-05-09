@@ -5,7 +5,7 @@ namespace Phpworkshop;
 
 use Engtuncay\Phputils8\FiCols\AbsFkbTable;
 use Engtuncay\Phputils8\FiCols\IFkbTableMeta;
-use Engtuncay\Phputils8\FiDtos\FiKeybean;
+use Engtuncay\Phputils8\FiDtos\Fkb;
 use Engtuncay\Phputils8\FiDtos\FkbList;
 use Engtuncay\Phputils8\FiMetas\FimFiCol;
 
@@ -229,1683 +229,1683 @@ class FkcEspMusteri extends AbsFkbTable implements IFkbTableMeta
     return $fkbList;
   }
 
-  public static function sqTableName(): FiKeybean
+  public static function sqTableName(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'sqTableName');
     $fkbCol->addFm(FimFiCol::fcTxHeader(), 'EspMusteri');
 
     return $fkbCol;
   }
 
-  public static function musLnId(): FiKeybean
+  public static function musLnId(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLnId');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngkod(): FiKeybean
+  public static function musLngkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngdistkod(): FiKeybean
+  public static function musLngdistkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGDISTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxtdistkod(): FiKeybean
+  public static function musTxtdistkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTDISTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musLngerpkod(): FiKeybean
+  public static function musLngerpkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGERPKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxterpkod(): FiKeybean
+  public static function musTxterpkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTERPKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtkod(): FiKeybean
+  public static function musTxtkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtunvan(): FiKeybean
+  public static function musTxtunvan(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTUNVAN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtilgilikisi(): FiKeybean
+  public static function musTxtilgilikisi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTILGILIKISI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtadres1(): FiKeybean
+  public static function musTxtadres1(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTADRES1');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtadres2(): FiKeybean
+  public static function musTxtadres2(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTADRES2');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtilce(): FiKeybean
+  public static function musTxtilce(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTILCE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtsehir(): FiKeybean
+  public static function musTxtsehir(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTSEHIR');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtvd(): FiKeybean
+  public static function musTxtvd(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTVD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtvn(): FiKeybean
+  public static function musTxtvn(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTVN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxttelefon(): FiKeybean
+  public static function musTxttelefon(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTTELEFON');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtpostakod(): FiKeybean
+  public static function musTxtpostakod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTPOSTAKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtfaks(): FiKeybean
+  public static function musTxtfaks(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTFAKS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtgrupkod(): FiKeybean
+  public static function musTxtgrupkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTGRUPKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtekgrupkod(): FiKeybean
+  public static function musTxtekgrupkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTEKGRUPKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musLngstkod(): FiKeybean
+  public static function musLngstkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGSTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxtstkod(): FiKeybean
+  public static function musTxtstkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTSTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTrhsonislemtarihi(): FiKeybean
+  public static function musTrhsonislemtarihi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTRHSONISLEMTARIHI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'datetimeoffset');
 
     return $fkbCol;
   }
 
-  public static function musDbliskontooran(): FiKeybean
+  public static function musDbliskontooran(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musDBLISKONTOORAN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'decimal');
 
     return $fkbCol;
   }
 
-  public static function musBytvadegun(): FiKeybean
+  public static function musBytvadegun(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTVADEGUN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxttckimlikno(): FiKeybean
+  public static function musTxttckimlikno(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTTCKIMLIKNO');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtilgilikisi2(): FiKeybean
+  public static function musTxtilgilikisi2(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTILGILIKISI2');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtulke(): FiKeybean
+  public static function musTxtulke(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTULKE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxttelefon2(): FiKeybean
+  public static function musTxttelefon2(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTTELEFON2');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtceptelno(): FiKeybean
+  public static function musTxtceptelno(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTCEPTELNO');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musCrrkredilimit1(): FiKeybean
+  public static function musCrrkredilimit1(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musCRRKREDILIMIT1');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'decimal');
 
     return $fkbCol;
   }
 
-  public static function musCrrkredilimit2(): FiKeybean
+  public static function musCrrkredilimit2(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musCRRKREDILIMIT2');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'decimal');
 
     return $fkbCol;
   }
 
-  public static function musDblcarpan1(): FiKeybean
+  public static function musDblcarpan1(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musDBLCARPAN1');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'decimal');
 
     return $fkbCol;
   }
 
-  public static function musDblcarpan2(): FiKeybean
+  public static function musDblcarpan2(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musDBLCARPAN2');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'decimal');
 
     return $fkbCol;
   }
 
-  public static function musBytmerkezefaturala(): FiKeybean
+  public static function musBytmerkezefaturala(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTMERKEZEFATURALA');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytmusteristokkodu(): FiKeybean
+  public static function musBytmusteristokkodu(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTMUSTERISTOKKODU');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxtcadde(): FiKeybean
+  public static function musTxtcadde(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTCADDE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtsokak(): FiKeybean
+  public static function musTxtsokak(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTSOKAK');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtruhsatdaire(): FiKeybean
+  public static function musTxtruhsatdaire(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTRUHSATDAIRE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtruhsatno(): FiKeybean
+  public static function musTxtruhsatno(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTRUHSATNO');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtkapino(): FiKeybean
+  public static function musTxtkapino(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTKAPINO');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxterpbolgekod(): FiKeybean
+  public static function musTxterpbolgekod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTERPBOLGEKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtkisaad(): FiKeybean
+  public static function musTxtkisaad(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTKISAAD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytmaxiskontokont(): FiKeybean
+  public static function musBytmaxiskontokont(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTMAXISKONTOKONT');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytfiyatyetki(): FiKeybean
+  public static function musBytfiyatyetki(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTFIYATYETKI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytmagazasipbirlestir(): FiKeybean
+  public static function musBytmagazasipbirlestir(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTMAGAZASIPBIRLESTIR');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytmagazabasim(): FiKeybean
+  public static function musBytmagazabasim(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTMAGAZABASIM');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxtemail(): FiKeybean
+  public static function musTxtemail(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTEMAIL');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtwww(): FiKeybean
+  public static function musTxtwww(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTWWW');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtbarkod(): FiKeybean
+  public static function musTxtbarkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTBARKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musBytrut(): FiKeybean
+  public static function musBytrut(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTRUT');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngbolgekod(): FiKeybean
+  public static function musLngbolgekod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGBOLGEKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxtmerkezkod(): FiKeybean
+  public static function musTxtmerkezkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMERKEZKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musBytilkod(): FiKeybean
+  public static function musBytilkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTILKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngilkod(): FiKeybean
+  public static function musLngilkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGILKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngilcekod(): FiKeybean
+  public static function musLngilcekod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGILCEKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musBytkdvmuaf(): FiKeybean
+  public static function musBytkdvmuaf(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTKDVMUAF');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxtozelkod(): FiKeybean
+  public static function musTxtozelkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTOZELKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmahalle(): FiKeybean
+  public static function musTxtmahalle(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMAHALLE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtdiger(): FiKeybean
+  public static function musTxtdiger(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTDIGER');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytsemtkod(): FiKeybean
+  public static function musBytsemtkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTSEMTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTrhacilis(): FiKeybean
+  public static function musTrhacilis(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTRHACILIS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'datetimeoffset');
 
     return $fkbCol;
   }
 
-  public static function musTrhkapanis(): FiKeybean
+  public static function musTrhkapanis(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTRHKAPANIS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'datetimeoffset');
 
     return $fkbCol;
   }
 
-  public static function musBytmerkezilkod(): FiKeybean
+  public static function musBytmerkezilkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTMERKEZILKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngmerkezilkod(): FiKeybean
+  public static function musLngmerkezilkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGMERKEZILKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngmerkezilcekod(): FiKeybean
+  public static function musLngmerkezilcekod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGMERKEZILCEKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngmerkezsemtkod(): FiKeybean
+  public static function musLngmerkezsemtkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGMERKEZSEMTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngyonetimhiyerarsi1(): FiKeybean
+  public static function musLngyonetimhiyerarsi1(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGYONETIMHIYERARSI1');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngyonetimhiyerarsi2(): FiKeybean
+  public static function musLngyonetimhiyerarsi2(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGYONETIMHIYERARSI2');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musBytuygulamayeri(): FiKeybean
+  public static function musBytuygulamayeri(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTUYGULAMAYERI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytmerkezden(): FiKeybean
+  public static function musBytmerkezden(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTMERKEZDEN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngdagitimsirasi(): FiKeybean
+  public static function musLngdagitimsirasi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGDAGITIMSIRASI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngozelurunkod(): FiKeybean
+  public static function musLngozelurunkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGOZELURUNKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musBytcakismakontrolu(): FiKeybean
+  public static function musBytcakismakontrolu(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTCAKISMAKONTROLU');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musDblkoordinatx(): FiKeybean
+  public static function musDblkoordinatx(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musDBLKOORDINATX');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'decimal');
 
     return $fkbCol;
   }
 
-  public static function musDblkoordinaty(): FiKeybean
+  public static function musDblkoordinaty(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musDBLKOORDINATY');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'decimal');
 
     return $fkbCol;
   }
 
-  public static function musLngharitakod(): FiKeybean
+  public static function musLngharitakod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGHARITAKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musBytcekriskoran(): FiKeybean
+  public static function musBytcekriskoran(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTCEKRISKORAN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytsenetriskoran(): FiKeybean
+  public static function musBytsenetriskoran(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTSENETRISKORAN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytonay(): FiKeybean
+  public static function musBytonay(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTONAY');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytodemetipi(): FiKeybean
+  public static function musBytodemetipi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTODEMETIPI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytcalismatip(): FiKeybean
+  public static function musBytcalismatip(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTCALISMATIP');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngisakiskod(): FiKeybean
+  public static function musLngisakiskod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGISAKISKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngcekvadegun(): FiKeybean
+  public static function musLngcekvadegun(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGCEKVADEGUN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngvergidairesikod(): FiKeybean
+  public static function musLngvergidairesikod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGVERGIDAIRESIKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxtgrupkirilimkod(): FiKeybean
+  public static function musTxtgrupkirilimkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTGRUPKIRILIMKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytrfcheckaktarim(): FiKeybean
+  public static function musBytrfcheckaktarim(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTRFCHECKAKTARIM');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngsatisfaturakota(): FiKeybean
+  public static function musLngsatisfaturakota(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGSATISFATURAKOTA');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musBytfaturakapatma(): FiKeybean
+  public static function musBytfaturakapatma(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTFATURAKAPATMA');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musImgfoto1(): FiKeybean
+  public static function musImgfoto1(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musIMGFOTO1');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'image');
 
     return $fkbCol;
   }
 
-  public static function musImgfoto2(): FiKeybean
+  public static function musImgfoto2(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musIMGFOTO2');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'image');
 
     return $fkbCol;
   }
 
-  public static function musLngiptalneden(): FiKeybean
+  public static function musLngiptalneden(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGIPTALNEDEN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxtgrupad(): FiKeybean
+  public static function musTxtgrupad(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTGRUPAD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtekgrupad(): FiKeybean
+  public static function musTxtekgrupad(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTEKGRUPAD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytdurum(): FiKeybean
+  public static function musBytdurum(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTDURUM');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musByttip(): FiKeybean
+  public static function musByttip(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTTIP');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxtpasaportno(): FiKeybean
+  public static function musTxtpasaportno(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTPASAPORTNO');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtodemetip(): FiKeybean
+  public static function musTxtodemetip(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTODEMETIP');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTrhilkislemtarihi(): FiKeybean
+  public static function musTrhilkislemtarihi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTRHILKISLEMTARIHI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'datetimeoffset');
 
     return $fkbCol;
   }
 
-  public static function musLngilkkullanicikod(): FiKeybean
+  public static function musLngilkkullanicikod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGILKKULLANICIKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngsonkullanicikod(): FiKeybean
+  public static function musLngsonkullanicikod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGSONKULLANICIKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxtreferans(): FiKeybean
+  public static function musTxtreferans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTREFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytversiparisi(): FiKeybean
+  public static function musBytversiparisi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTVERSIPARISI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxtdisttextkod(): FiKeybean
+  public static function musTxtdisttextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTDISTTEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtdistreferans(): FiKeybean
+  public static function musTxtdistreferans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTDISTREFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmusterigruptextkod(): FiKeybean
+  public static function musTxtmusterigruptextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMUSTERIGRUPTEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmusterigrupreferans(): FiKeybean
+  public static function musTxtmusterigrupreferans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMUSTERIGRUPREFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmusteriekgruptextkod(): FiKeybean
+  public static function musTxtmusteriekgruptextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMUSTERIEKGRUPTEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmusteriekgrupreferans(): FiKeybean
+  public static function musTxtmusteriekgrupreferans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMUSTERIEKGRUPREFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtozeluruntextkod(): FiKeybean
+  public static function musTxtozeluruntextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTOZELURUNTEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtyonetimhiyerarsitextkod1(): FiKeybean
+  public static function musTxtyonetimhiyerarsitextkod1(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTYONETIMHIYERARSITEXTKOD1');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtyonetimhiyerarsi1Referans(): FiKeybean
+  public static function musTxtyonetimhiyerarsi1Referans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTYONETIMHIYERARSI1REFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtyonetimhiyerarsitextkod2(): FiKeybean
+  public static function musTxtyonetimhiyerarsitextkod2(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTYONETIMHIYERARSITEXTKOD2');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtyonetimhiyerarsi2Referans(): FiKeybean
+  public static function musTxtyonetimhiyerarsi2Referans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTYONETIMHIYERARSI2REFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmerkeziltextkod(): FiKeybean
+  public static function musTxtmerkeziltextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMERKEZILTEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtilreferans(): FiKeybean
+  public static function musTxtilreferans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTILREFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmerkezilcetextkod(): FiKeybean
+  public static function musTxtmerkezilcetextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMERKEZILCETEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmerkezilcereferans(): FiKeybean
+  public static function musTxtmerkezilcereferans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMERKEZILCEREFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtmerkezsemttextkod(): FiKeybean
+  public static function musTxtmerkezsemttextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTMERKEZSEMTTEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtvergidairesitextkod(): FiKeybean
+  public static function musTxtvergidairesitextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTVERGIDAIRESITEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtvergidairesireferans(): FiKeybean
+  public static function musTxtvergidairesireferans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTVERGIDAIRESIREFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtbolgetextkod(): FiKeybean
+  public static function musTxtbolgetextkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTBOLGETEXTKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtbolgereferans(): FiKeybean
+  public static function musTxtbolgereferans(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTBOLGEREFERANS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytefatura(): FiKeybean
+  public static function musBytefatura(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTEFATURA');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytiptalonay(): FiKeybean
+  public static function musBytiptalonay(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTIPTALONAY');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytgpsislemyap(): FiKeybean
+  public static function musBytgpsislemyap(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTGPSISLEMYAP');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytteslimatmusterisi(): FiKeybean
+  public static function musBytteslimatmusterisi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTTESLIMATMUSTERISI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytgunluksifmuaf(): FiKeybean
+  public static function musBytgunluksifmuaf(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTGUNLUKSIFMUAF');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytyilliksifmuaf(): FiKeybean
+  public static function musBytyilliksifmuaf(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTYILLIKSIFMUAF');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytstsifmuaf(): FiKeybean
+  public static function musBytstsifmuaf(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTSTSIFMUAF');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytgonderimtip(): FiKeybean
+  public static function musBytgonderimtip(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTGONDERIMTIP');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytdoviztip(): FiKeybean
+  public static function musBytdoviztip(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTDOVIZTIP');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngteslimatseklikod(): FiKeybean
+  public static function musLngteslimatseklikod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGTESLIMATSEKLIKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musBytkayitizni(): FiKeybean
+  public static function musBytkayitizni(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTKAYITIZNI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytiletisimizni(): FiKeybean
+  public static function musBytiletisimizni(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTILETISIMIZNI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytcinsiyet(): FiKeybean
+  public static function musBytcinsiyet(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTCINSIYET');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytalissipyuklemekontrol(): FiKeybean
+  public static function musBytalissipyuklemekontrol(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTALISSIPYUKLEMEKONTROL');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytfiyatsizirsaliyebasim(): FiKeybean
+  public static function musBytfiyatsizirsaliyebasim(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTFIYATSIZIRSALIYEBASIM');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytyasaltakip(): FiKeybean
+  public static function musBytyasaltakip(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTYASALTAKIP');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytsiparacyukolusacakbelge(): FiKeybean
+  public static function musBytsiparacyukolusacakbelge(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTSIPARACYUKOLUSACAKBELGE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytisemri(): FiKeybean
+  public static function musBytisemri(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTISEMRI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngdtgun(): FiKeybean
+  public static function musLngdtgun(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGDTGUN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngdtay(): FiKeybean
+  public static function musLngdtay(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGDTAY');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngdtyil(): FiKeybean
+  public static function musLngdtyil(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGDTYIL');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLnggarantisure(): FiKeybean
+  public static function musLnggarantisure(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGGARANTISURE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musBytgarantisure(): FiKeybean
+  public static function musBytgarantisure(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTGARANTISURE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngsaklamaadet(): FiKeybean
+  public static function musLngsaklamaadet(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGSAKLAMAADET');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngsokmetakmaadet(): FiKeybean
+  public static function musLngsokmetakmaadet(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGSOKMETAKMAADET');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musLngtekilmusterikod(): FiKeybean
+  public static function musLngtekilmusterikod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGTEKILMUSTERIKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTrhsonislemtarihiversiparisi(): FiKeybean
+  public static function musTrhsonislemtarihiversiparisi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTRHSONISLEMTARIHIVERSIPARISI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'datetimeoffset');
 
     return $fkbCol;
   }
 
-  public static function musTxtonaykod(): FiKeybean
+  public static function musTxtonaykod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTONAYKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytkayitiznionay(): FiKeybean
+  public static function musBytkayitiznionay(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTKAYITIZNIONAY');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musByttemelticari(): FiKeybean
+  public static function musByttemelticari(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTTEMELTICARI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxtsmscustomerid(): FiKeybean
+  public static function musTxtsmscustomerid(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTSMSCUSTOMERID');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musByteirsaliye(): FiKeybean
+  public static function musByteirsaliye(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTEIRSALIYE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytgpsislemmuaf(): FiKeybean
+  public static function musBytgpsislemmuaf(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTGPSISLEMMUAF');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngmobilhizmetadedi(): FiKeybean
+  public static function musLngmobilhizmetadedi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGMOBILHIZMETADEDI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxtasilaliciunvan(): FiKeybean
+  public static function musTxtasilaliciunvan(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTASILALICIUNVAN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtasilalicivergino(): FiKeybean
+  public static function musTxtasilalicivergino(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTASILALICIVERGINO');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtasilaliciadres(): FiKeybean
+  public static function musTxtasilaliciadres(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTASILALICIADRES');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTrhziyaretsaati(): FiKeybean
+  public static function musTrhziyaretsaati(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTRHZIYARETSAATI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'datetimeoffset');
 
     return $fkbCol;
   }
 
-  public static function musTrhziyaretsaatibitis(): FiKeybean
+  public static function musTrhziyaretsaatibitis(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTRHZIYARETSAATIBITIS');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'datetimeoffset');
 
     return $fkbCol;
   }
 
-  public static function musLngziyaretsure(): FiKeybean
+  public static function musLngziyaretsure(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGZIYARETSURE');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musBythaftakod(): FiKeybean
+  public static function musBythaftakod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTHAFTAKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytgunkod(): FiKeybean
+  public static function musBytgunkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTGUNKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxttekilkod(): FiKeybean
+  public static function musTxttekilkod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTTEKILKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtasilalicivergidairesi(): FiKeybean
+  public static function musTxtasilalicivergidairesi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTASILALICIVERGIDAIRESI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtasilsaticiunvan(): FiKeybean
+  public static function musTxtasilsaticiunvan(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTASILSATICIUNVAN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtasilsaticivergino(): FiKeybean
+  public static function musTxtasilsaticivergino(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTASILSATICIVERGINO');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtasilsaticiadres(): FiKeybean
+  public static function musTxtasilsaticiadres(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTASILSATICIADRES');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtasilsaticivergidairesi(): FiKeybean
+  public static function musTxtasilsaticivergidairesi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTASILSATICIVERGIDAIRESI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxteirsaliyevarsayilanpk(): FiKeybean
+  public static function musTxteirsaliyevarsayilanpk(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTEIRSALIYEVARSAYILANPK');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musTxtefaturavarsayilanpk(): FiKeybean
+  public static function musTxtefaturavarsayilanpk(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTEFATURAVARSAYILANPK');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytmusterianlasmadurumu(): FiKeybean
+  public static function musBytmusterianlasmadurumu(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTMUSTERIANLASMADURUMU');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytkooperatifmusterisi(): FiKeybean
+  public static function musBytkooperatifmusterisi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTKOOPERATIFMUSTERISI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytcrmonaydurumu(): FiKeybean
+  public static function musBytcrmonaydurumu(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTCRMONAYDURUMU');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxtretneden(): FiKeybean
+  public static function musTxtretneden(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTRETNEDEN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'varchar');
 
     return $fkbCol;
   }
 
-  public static function musTrhruhsatgecerlilik(): FiKeybean
+  public static function musTrhruhsatgecerlilik(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTRHRUHSATGECERLILIK');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'date');
 
     return $fkbCol;
   }
 
-  public static function musTxtulusalticarikod(): FiKeybean
+  public static function musTxtulusalticarikod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTULUSALTICARIKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytkamu(): FiKeybean
+  public static function musBytkamu(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTKAMU');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musTxtekvn(): FiKeybean
+  public static function musTxtekvn(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTEKVN');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musBytsevkgunu(): FiKeybean
+  public static function musBytsevkgunu(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTSEVKGUNU');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musBytkampanyalardanharictut(): FiKeybean
+  public static function musBytkampanyalardanharictut(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musBYTKAMPANYALARDANHARICTUT');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'tinyint');
 
     return $fkbCol;
   }
 
-  public static function musLngmahallekod(): FiKeybean
+  public static function musLngmahallekod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musLNGMAHALLEKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'int');
 
     return $fkbCol;
   }
 
-  public static function musTxtulkeadi(): FiKeybean
+  public static function musTxtulkeadi(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musTXTULKEADI');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'nvarchar');
 
     return $fkbCol;
   }
 
-  public static function musIndexUniqMusLngKod(): FiKeybean
+  public static function musIndexUniqMusLngKod(): Fkb
   {
-    $fkbCol = new FiKeybean();
+    $fkbCol = new Fkb();
     $fkbCol->addFm(FimFiCol::fcTxFieldName(), 'musIndexUniqMusLngKod');
     $fkbCol->addFm(FimFiCol::fcTxHeader(), 'musLNGKOD');
     $fkbCol->addFm(FimFiCol::fcTxFieldType(), 'index_uniq');

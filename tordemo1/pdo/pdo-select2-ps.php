@@ -1,13 +1,13 @@
 <?php
 require_once './pdo-db-config.php';
 
-use Engtuncay\Phputils\core\FiKeybean;
+use Engtuncay\Phputils\core\Fkb;
 
 try {
 
     $stmt = AppContext::$conn->prepare("SELECT * from MyGuests where id=:id Limit 1");
 
-    $fkbParams = new FiKeybean();
+    $fkbParams = new Fkb();
 
     $fkbParams->genType = new FicDemo();
 

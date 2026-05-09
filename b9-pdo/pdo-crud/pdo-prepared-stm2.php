@@ -1,5 +1,5 @@
 <?php
-use Engtuncay\Phputils\core\FiKeyBean;
+use Engtuncay\Phputils\core\Fkb;
 
 try {
   // prepare sql and bind parameters
@@ -15,7 +15,7 @@ VALUES (:firstname,:lastname)" );
   $arr[ 'firstname' ] = $firstname;
   $arr[ 'lastname' ] = $lastname;
 
-  $fkbParams = new FiKeyBean();
+  $fkbParams = new Fkb();
   $fkbParams->put( 'firstname', $firstname );
   $fkbParams->put( 'lastname', $lastname );
   $stmt->execute( $fkbParams->getArrParams() );

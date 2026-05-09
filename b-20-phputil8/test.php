@@ -1,9 +1,9 @@
 <?php
-use Engtuncay\Phputils8\FiDtos\FiKeybean;
+use Engtuncay\Phputils8\FiDtos\Fkb;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$fkb = new FiKeybean();
+$fkb = new Fkb();
 
 $fkb->put("name", "Tuncay");
 

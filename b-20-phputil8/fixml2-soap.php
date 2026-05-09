@@ -2,7 +2,7 @@
 
 use Engtuncay\Phputils8\FiApps\FiAppConfig;
 use Engtuncay\Phputils8\FiConfigs\FiConfReader;
-use Engtuncay\Phputils8\FiDtos\FiKeybean;
+use Engtuncay\Phputils8\FiDtos\Fkb;
 use Engtuncay\Phputils8\FiLogs\FiLog;
 use Engtuncay\Phputils8\FiSoaps\FiSoap;
 use Engtuncay\Phputils8\FiXmls\FiXmlReq;
